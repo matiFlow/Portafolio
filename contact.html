@@ -7,60 +7,58 @@
     <link rel="shortcut icon" href="img/index.jpeg" type="image/x-icon">
     <title>Document</title>
 
-    <!--link of css-->
-    <link rel="stylesheet" href="css/">
+    <!--Css-->
+    <link rel="stylesheet" href="css/contact.css"> 
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header>
-        <img src="img/img_prueba.jpg" alt="imagen de logo">
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                
-                <li>
-                    <a href="about-me.html">Sobre mi</a>
-                </li>
-                
-                <li>
-                    <a href="proyect.html">Proyectos</a>
-                </li>
-                
-                <li>
-                    <a href="contact.html">Contacto</a>
-                </li>
-                
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                
-            </ul> 
-    
-            <button>Descargar CV</button>
-        </nav>
+        <div class="navegation">        
+            <nav>
+                <div class="imagen-logo">
+                    <img src="img/img_prueba.jpg" alt="imagen delogo">
+                </div>
+                <ul class="links-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about-me.html">Sobre mi</a></li>
+                    <li><a href="proyects">Proyectos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul> 
+                <button type="button" class="btn btn-primary">Descargar cv</button>
+            </nav>
+        </div>
     </header>
 
-    <div class="conteiner">Contacto</div>
-    <form action="" method="post">
-        <p>!Ponte en contacto conmigo¡</p>
+    <div class="separador"></div>
+    
+    <div class="container-contacto">
+        <h1>Contacto</h1>
+    </div>
 
-        <input type="text" name="usuario" value="">
-        <input type="password" name="password">
-        <input type="email" name="password" value="">
-        <textarea name="sobre mi" id="" cols="33" rows="5"></textarea>
-
-        <!-- Botones de formulario -->
-        <button type="submit" value="submit">Enviar formulario</button>
-        <button type="reset" value="reset">Limpiar formulario</button>
-
-        <label for="nombre_apellido">Nombre completo</label>
-        <input type="text" id="nombre_apellido" name="nombre_apellido">
-    </form>
-
-    <footer>
-        <p>creado por matias, kevin y miqueas ©</p>
-    </footer>
+    <div class="container-form">
+        <div class="form">
+            <form action="" method="post">
+                <p>¡Ponte en contacto conmigo!</p>
+                <input type="text" name="nombres" id="nombres" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <input type="email" name="password" placeholder="Email">
+                <textarea name="redaccion" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </form>
+        </div>
+        <div class="link">
+            <i class="fab fa-facebook"><img src="" alt=""></i>
+            <i class="fa-brands fa-facebook fa-fade" style="color: #c01c28;"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <footer>
+            <p>creado por matias, kevin y miqueas ©</p>
+        </footer>
+    </div>
 </body>
-</html>

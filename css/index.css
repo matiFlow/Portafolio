@@ -1,0 +1,30 @@
+*{
+    font-family: 'Calligraffitti', monospace;
+}
+
+#header{
+    display: flex;
+}
+
+nav{
+    display: flex;
+}
+
+#header img{
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    color: rgb(10,40,63);
+}
+
+p{
+    color: #7f7e22;
+}
+
+#nav ul{
+    list-style-type: none;
+}
+
+
