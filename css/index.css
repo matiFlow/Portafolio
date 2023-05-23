@@ -1,30 +1,146 @@
 *{
-    font-family: 'Calligraffitti', monospace;
+    margin: 0;
+    padding: 0;
 }
 
-#header{
+header nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c1b5b5;
 }
 
-nav{
+header nav img{
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 2%;
+}
+
+header nav ul{
     display: flex;
+    list-style: none;
 }
 
-#header img{
-    width: 50px;
-    height: 50px;
+header nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 30px 30px 0 0;
 }
 
-h1{
-    color: rgb(10,40,63);
+header nav ul li:hover a{
+    text-decoration: underline;
 }
 
-p{
-    color: #7f7e22;
+header nav button{
+    background-color: #2604eb;
+    border-radius: 10%;
+    margin-right: 2%;
+    padding: 1.5%;
+    font-size: 16px;
 }
 
-#nav ul{
-    list-style-type: none;
+.separador{
+    background-color: #585757;
+    width: 100%;
+    height: 2.5px;
 }
 
 
+/*Contacto*/
+.container-contacto{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-color: #8d6ebb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23360a7d' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.separador2{
+    background-color: #585757;
+    width: 100%;
+    height: 2.5px;
+}
+
+.container-form {
+    display: flex; /* Utiliza el modelo de diseño flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container-form  .form p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.container-form .form {
+    width: 70%;
+}
+
+.form input{
+    width: 100%; /* Ancho del 100% del contenedor */
+    margin-bottom: 10px; /* Margen inferior de 10px para separar los campos */
+    height: 40px;
+    font-size: 16px;
+}
+.form textarea {
+  width: 100%; /* Ancho del 100% del contenedor */
+  margin-bottom: 10px; /* Margen inferior de 10px para separar los campos */
+  resize: none;
+  font-size: 16px;
+}
+
+.iconos {
+    display: flex;
+    margin: 0 auto;
+}
+
+.iconos i {
+    font-size: 40px; /* Tamaño de fuente de 24px para los íconos */
+    margin: 10px;
+    color: #2604eb;
+    margin-top: 35px;
+}
+
+.separador3{
+    height: 2.5px;
+    background-color: #585757;
+}
+
+.footer{
+    height: 70px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #c1b5b5;
+}
+
+/*Proyects*/
+
+.titulo-proyect{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-color: #000000;
+    justify-content: center; 
+    align-items: center;
+}
+
+.conteiner-cards .card1, .card2, .card3, .card4{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border: 1px solid gray;
+}
