@@ -8,36 +8,39 @@
     <title>Document</title>
 
     <!--Css-->
-    <link rel="stylesheet" href="css/contact.css"> 
+    <link rel="stylesheet" href="css/index.css"> 
 
-    <!--Font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
+    <!--Bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 </head>
 <body>
-    <header>
-        <div class="navegation">        
+    <header>      
             <nav>
-                <div class="imagen-logo">
-                    <img src="img/img_prueba.jpg" alt="imagen delogo">
-                </div>
+                <img src="img/img_prueba.jpg" alt="imagen delogo">
+        
                 <ul class="links-nav">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="about-me.html">Sobre mi</a></li>
-                    <li><a href="proyects">Proyectos</a></li>
+                    <li><a href="proyect.html">Proyectos</a></li>
                     <li><a href="contact.html">Contacto</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul> 
-                <button type="button" class="btn btn-primary">Descargar cv</button>
+                <button type="button" class="btn-primary"><p>Descargar cv</p></button>
             </nav>
-        </div>
     </header>
 
     <div class="separador"></div>
     
     <div class="container-contacto">
-        <h1>Contacto</h1>
+        <div class="titulo">
+            <h1>Contacto</h1>
+        </div>
     </div>
+
+    <div class="separador2"></div>
 
     <div class="container-form">
         <div class="form">
@@ -49,12 +52,19 @@
                 <textarea name="redaccion" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
             </form>
         </div>
-        <div class="link">
-            <i class="fab fa-facebook"><img src="" alt=""></i>
-            <i class="fa-brands fa-facebook fa-fade" style="color: #c01c28;"></i>
-            <i class="fab fa-linkedin"></i>
+        <div class="iconos">
+            <!--Icon facebook-->
+            <a href=""><i class="fa-brands fa-facebook fa-beat-fade"></i></a>
+
+            <!--icon instagram-->
+            <a href=""><i class="fa-brands fa-square-instagram fa-beat-fade"></i></a>
+
+            <!--icon linkeding-->
+            <a href=""><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>
         </div>
     </div>
+
+    <div class="separador3"></div>
     
     <div class="footer">
         <footer>
