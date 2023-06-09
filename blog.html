@@ -1,172 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/index.jpeg" type="image/x-icon">
     <title>Document</title>
 
-    <!--link de css-->
-    <link rel="stylesheet" href="css/style.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/index.css"> 
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!--Bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    
+	<!--AOS Animation-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
-
 <body>
-    <header id="header">
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init(); // Inicializa AOS
+	</script>
+    <header>   
+            
+        <!--Navegation-->
+            <nav>				
+                <!--logo-->
+                <img src="img/img_prueba.jpg" alt="imagen delogo">
+                
+                <!--navegation links-->
+                <ul class="links-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about-me.html">Sobre mi</a></li>
+                    <li><a href="proyect.html">Proyectos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul> 
 
-        <!--logo of navegatión-->
-        <img src="img/img_prueba.jpg" alt="imagen de logo">
-
-        <!--Navbar-->
-        <nav id="nav">
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                
-                <li>
-                    <a href="about-me.html">Sobre mi</a>
-                </li>
-                
-                <li>
-                    <a href="proyect.html">Proyectos</a>
-                </li>
-                
-                <li>
-                    <a href="contact.html">Contacto</a>
-                </li>
-                
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                
-            </ul> 
-
-            <button>Descargar CV</button>
-        </nav>
+                <!--cv button-->
+                <button type="button" class="btn-primary"><p>Descargar cv</p></button>
+            </nav>
     </header>
     
     <h1>Blog</h1>
 
-    <div class="conteiner-blog">
-        <div class="content">
+    <div class="conteiner-blog" data-aos="flip-up">
+        <div class="content" data-aos="flip-up">
             <h2>Desarrollo Web</h2>
 			<h2>Base de Datos</h2>
 			<h2>Programacion Estructurada</h2>
 			<h2>Metodos Agiles</h2>
 			<h2>Album Fotos</h2>
         </div>
-        <div class="content-2">
+        <div class="content-2" data-aos="flip-up">
 		    <h3>Articulos</h3>
         </div>
-        <div class="content-3">
+        <div class="content-3" data-aos="flip-up">
 		    
-			<ul>
+			<section >
                 <li> Videos
 				    <p>Lorem elit. Voluptatum optio, excepturi
                        ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
+				    <img src="./img/blog/img_blog01.jpg" alt="Aqui debe haber una imagen">
 				</li>
 				<li> Videos
 				    <p>Lorem elit. Voluptatum optio, excepturi
                        ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
+				    <img src="./img/blog/img_blog02.jpg" alt="Aqui debe haber una imagen">
 				</li>
 				<li> Videos
 				    <p>Lorem elit. Voluptatum optio, excepturi
                        ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
+				    <img src="./img/blog/img_blog03.jpg" alt="Aqui debe haber una imagen">
 				</li>
 				<li> Videos
 				    <p>Lorem elit. Voluptatum optio, excepturi
                        ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
+				    <img src="./img/blog/img_blog04.jpg" alt="Aqui debe haber una imagen">
 				</li>
 				<li> Videos
 				    <p>Lorem elit. Voluptatum optio, excepturi
                        ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
+				    <img src="./img/blog/img_blog05.jpg" alt="Aqui debe haber una imagen">
 				</li>
 				<li> Videos
 				    <p>Lorem elit. Voluptatum optio, excepturi
                        ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
+				    <img src="./img/blog/img_blog06.jpg" alt="Aqui debe haber una imagen">
 				</li>
 				<li> Videos
 				    <p>Lorem elit. Voluptatum optio, excepturi
                        ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
+				    <img src="./img/blog/img_blog07.jpg" alt="Aqui debe haber una imagen">
 				</li>
 				<li> Videos
 				    <p>Lorem elit. Voluptatum optio, excepturi
                        ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
-				</li>
-				<li> Videos
-				    <p>Lorem elit. Voluptatum optio, excepturi
-                       ssimos! Pariatur, inventore neque?</p>
-				    <img src="img/img_blog.png" alt="Aqui debe haber una imagen">
+				    <img src="./img/blog/img_blog08.jpg" alt="Aqui debe haber una imagen">
 				</li>
 				
-				
+				<li> Videos
+				    <p>Lorem elit. Voluptatum optio, excepturi
+                       ssimos! Pariatur, inventore neque?</p>
+				    <img src="./img/blog/img_blog01.jpg" alt="Aqui debe haber una imagen">
+				</li>
+				<li> Videos
+				    <p>Lorem elit. Voluptatum optio, excepturi
+                       ssimos! Pariatur, inventore neque?</p>
+				    <img src="./img/blog/img_blog02.jpg" alt="Aqui debe haber una imagen">
+				</li>
+				<li> Videos
+				    <p>Lorem elit. Voluptatum optio, excepturi
+                       ssimos! Pariatur, inventore neque?</p>
+				    <img src="./img/blog/img_blog03.jpg" alt="Aqui debe haber una imagen">
+				</li>
+				<li> Videos
+				    <p>Lorem elit. Voluptatum optio, excepturi
+                       ssimos! Pariatur, inventore neque?</p>
+				    <img src="./img/blog/img_blog04.jpg" alt="Aqui debe haber una imagen">
+				</li>
+				<li> Videos
+				    <p>Lorem elit. Voluptatum optio, excepturi
+                       ssimos! Pariatur, inventore neque?</p>
+				    <img src="./img/blog/img_blog05.jpg" alt="Aqui debe haber una imagen">
+				</li>
+				<li> Videos
+				    <p>Lorem elit. Voluptatum optio, excepturi
+                       ssimos! Pariatur, inventore neque?</p>
+				    <img src="./img/blog/img_blog06.jpg" alt="Aqui debe haber una imagen">
+				</li>
+				<li> Videos
+				    <p>Lorem elit. Voluptatum optio, excepturi
+                       ssimos! Pariatur, inventore neque?</p>
+				    <img src="./img/blog/img_blog07.jpg" alt="Aqui debe haber una imagen">
+				</li>
+				<li> Videos
+				    <p>Lorem elit. Voluptatum optio, excepturi
+                       ssimos! Pariatur, inventore neque?</p>
+				    <img src="./img/blog/img_blog08.jpg" alt="Aqui debe haber una imagen">
+				</li>
 				
 		        
-			<ul/>
+			</section>
         </div>
         
         
