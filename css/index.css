@@ -3,46 +3,139 @@
     padding: 0;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
+/* SECTION HEADER */
+
+.header {
+    min-height: 230px;
+}
+
+/* 
+the logo disappears in cell size 
+*/
+.navbar .container-fluid .collapse .navbar-brand {
+    display: none;
+}
+
+.navbar .container-fluid .collapse {
+    margin-bottom: 15px;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .navbar .container-fluid .collapse .navbar-brand {
+        display: block;
+    }
+
+    /* the logo of the links is separated */
+    .navbar .container-fluid .collapse {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .container-fluid .collapse .navbar-brand img {
+        height: 70px;
+    }
+}
+
+/* SECTION MAIN > HOME */
+
+.main {
+    background: url("../img/background-home.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home .home-contentMain {
+    min-height: 550px;
+    display: grid;
+    grid-template-rows: 1fr 300px;
     align-items: center;
-    background-color: #c1b5b5;
+    text-align: center;
 }
 
-header nav .hamburgesa{
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .home .home-contentMain {
+        min-height: 700px;
+    }
 }
 
-header nav img{
+@media screen and (min-width:1200px) {
+    .home .home-contentMain {
+        min-height: 750px;
+    }
+}
+
+.home .home-contentMain .home-contentTitle {
+    color: white;
+    align-self: end;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .home .home-contentMain .home-contentTitle {
+        width: 82%;
+        margin: 0 auto;
+    }
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .home .home-contentMain .home-contentTitle {
+        width: 730px;
+        align-self: center;
+    }
+}
+
+
+/* Title section home */
+.home .home-contentMain .home-contentTitle .home-title .title-span {
+    color: red;
+}
+
+/* Social networks */
+.home .home-contentMain .home-containerNetworks {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+
+    /* Social networks */
+    .home .home-contentMain .home-containerNetworks {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+    }
+
+    .home .home-contentMain .home-containerNetworks a {
+        width: min-content;
+        /* reduces all leftover space and only occupies its content, similar to inline */
+        margin: 0 auto;
+    }
+
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .home .home-contentMain .home-containerNetworks {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.home .home-contentMain .home-containerNetworks a img {
     width: 60px;
-    border-radius: 50%;
-    margin-left: 2%;
+    background-color: #fff;
 }
 
-header nav ul{
-    display: flex;
-    list-style: none;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: #000000;
-    padding: 30px 30px 0 0;
-}
-
-header nav ul li:hover a{
-    text-decoration: underline;
-}
-
-header nav button{
-    background-color: #2604eb;
-    border-radius: 10%;
-    margin-right: 2%;
-    padding: 1.5%;
-    font-size: 16px;
+@media screen and (min-width:992px) {
+    .home .home-contentMain .home-containerNetworks a img {
+        width: 80px;
+    }
 }
 
 .separador{
@@ -52,75 +145,161 @@ header nav button{
 }
 
 /*index*/
-body#home {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-}
-
-#main{
-    background-image: url("../img/img-fondo.jpg");
+.main {
+    background: url("../img/background-home.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
-    height: 100%;
 }
 
-#main .home {
-    display: flex;
-    flex-direction: column;
+.home .home-contentMain {
+    min-height: 550px;
+    display: grid;
+    grid-template-rows: 1fr 300px;
     align-items: center;
-    font-size: 40px;
-    color: white;
-    height: 100%;
-    justify-content: center;
-    & article {
-        & h1 span {
-            color: red;
-            &:nth-child(2) {
-                display: block;
-                color: white;
-            }
-        }
+    text-align: center;
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .home .home-contentMain {
+        min-height: 700px;
     }
-    & .icons {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-around;
-        width: 30vw;
-        & img {
-            background-color: white;
-        }
+}
+
+@media screen and (min-width:1200px) {
+    .home .home-contentMain {
+        min-height: 750px;
+    }
+}
+
+.home .home-contentMain .home-contentTitle {
+    color: white;
+    align-self: end;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .home .home-contentMain .home-contentTitle {
+        width: 82%;
+        margin: 0 auto;
+    }
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .home .home-contentMain .home-contentTitle {
+        width: 730px;
+        align-self: center;
+    }
+}
+
+
+/* Title section home */
+.home .home-contentMain .home-contentTitle .home-title .title-span {
+    color: red;
+}
+
+/* Social networks */
+.home .home-contentMain .home-containerNetworks {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+
+    /* Social networks */
+    .home .home-contentMain .home-containerNetworks {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+    }
+
+    .home .home-contentMain .home-containerNetworks a {
+        width: min-content;
+        /* reduces all leftover space and only occupies its content, similar to inline */
+        margin: 0 auto;
+    }
+
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .home .home-contentMain .home-containerNetworks {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.home .home-contentMain .home-containerNetworks a img {
+    width: 60px;
+    background-color: #fff;
+}
+
+@media screen and (min-width:992px) {
+    .home .home-contentMain .home-containerNetworks a img {
+        width: 80px;
     }
 }
 
 /*about-me*/
-body#about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    & article h1{
-        font-size: 40px;
-        text-align: center;
-    }
-}
-body#about-me main{
-    background-image: none;
+.aboutMe {
+    background: rgb(33, 25, 177);
+    background: linear-gradient(90deg, rgba(33, 25, 177, 1) 3%, rgba(18, 37, 184, 1) 33%, rgba(17, 89, 139, 1) 57%, rgba(19, 27, 180, 0.9248074229691877) 100%);
 }
 
-#main .about-me article {
-    display: flex;
-    flex-direction: column;
+.aboutMe .aboutMe-contentMain {
+    min-height: 550px;
+    display: grid;
+    grid-template-rows: 0.6fr 0.3fr;
     align-items: center;
-    & div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 70%;
+    text-align: center;
+    color: white;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .aboutMe .aboutMe-contentMain {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
-} 
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .aboutMe .aboutMe-contentMain {
+        min-height: 700px;
+    }
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    /* a fixed height is added to be able to have space and thus use space-evenly */
+    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+.aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial .aboutMe-detail {
+    margin: 25px;
+    margin-bottom: 0;
+}
+
+.aboutMe .aboutMe-contentMain .aboutMe-profile svg {
+    height: 150px;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .aboutMe .aboutMe-contentMain .aboutMe-profile svg {
+        height: 200px;
+    }
+}
 
 /*Contacto*/
 .container-contacto{

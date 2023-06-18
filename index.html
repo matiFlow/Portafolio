@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!--link of css-->
     <link rel="stylesheet" href="css/index.css">
@@ -16,27 +18,65 @@
 </head>
 <body id="home">
     <header>      
-        <nav>
-            <img src="img/img_prueba.jpg" alt="imagen delogo">
-    
-            <ul class="links-nav">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about-me.html">Sobre mi</a></li>
-                <li><a href="proyect.html">Proyectos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul> 
-            <button type="button" class="btn-primary"><p>Descargar cv</p></button>
+        <!--navegation-->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="./src/img/logo.png" alt="Logo">
+                    </a>
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-me.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyect.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <div class="separador"></div>
 
-    <main id="main">
-        <section class="home">
-            <article>
-                <h1>Hola, soy <span> Nombre y Apellido</span>, <span>estudiante de Desarrollo de Software.</span></h1>
-            </article>
+    <!-- Content main -->
+    <main class="main">
+        <!-- HOME -->
+        <section class="home container-fluid">
+            <div class="home-contentMain">
+                <div class="home-contentTitle">
+                    <h1 class="home-title">
+                        Hola, soy <span class="title-span">Nombre y Apellido</span>, Desarrollador de Software,
+                        actualmente cursando "n año".
+                    </h1>
+                </div>
+                <div class="home-containerNetworks">
+                    <a href="#">
+                        <img src="./img/homeNetworks-linkedin.png" alt="Linkedin">
+                    </a>
+                    <a href="#">
+                        <img src="./img/homeNetworks-instagram.png" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./img/homeNetworks-gmail.png" alt="gmail">
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -48,5 +88,9 @@
         </footer>
     </div>
 
+    <!-- Script Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
