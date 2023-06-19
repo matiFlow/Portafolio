@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+    <!-- Meta data -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-    <!--link of css-->
-    <link rel="stylesheet" href="css/index.css">
-
-    <!--link of font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+        crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
+    <!-- Title  -->
+    <title>Portfolio - Nombre Apelldio</title>
 </head>
-<body id="home">
-    <header>      
-        <!--navegation-->
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- NAV -->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler"
+                    aria-controls="navbarTogglerDemo01" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-toggler">
@@ -30,30 +39,27 @@
                     <a class="navbar-brand" href="#">
                         <img src="./src/img/logo.png" alt="Logo">
                     </a>
-                    <ul class="navbar-nav align-items-center">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about-me.html">Sobre mí</a>
+                            <a class="nav-link" href="./src/templates/about-me.html">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./proyect.html">Proyectos</a>
+                            <a class="nav-link" href="./src/templates/projects.html">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blog.html">Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contacto</a>
+                            <a class="nav-link" href="./src/templates/contact.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div class="separador"></div>
-
     <!-- Content main -->
     <main class="main">
         <!-- HOME -->
@@ -67,30 +73,35 @@
                 </div>
                 <div class="home-containerNetworks">
                     <a href="#">
-                        <img src="./img/homeNetworks-linkedin.png" alt="Linkedin">
+                        <img src="./src/img/homeNetworks-linkedin.png" alt="Linkedin">
                     </a>
                     <a href="#">
-                        <img src="./img/homeNetworks-instagram.png" alt="instagram">
+                        <img src="./src/img/homeNetworks-instagram.png" alt="instagram">
                     </a>
                     <a href="#">
-                        <img src="./img/homeNetworks-gmail.png" alt="gmail">
+                        <img src="./src/img/homeNetworks-gmail.png" alt="gmail">
                     </a>
                 </div>
             </div>
         </section>
     </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            Creado por Matias, Kevin y Miqueras © 2023
+        </p>
+    </footer>
 
-    <div class="separador"></div>
 
-    <div class="footer">
-        <footer>
-            <p>creado por matias, kevin y miqueas ©</p>
-        </footer>
-    </div>
+
+
+
+
 
     <!-- Script Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

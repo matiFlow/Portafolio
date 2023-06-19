@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/index.jpeg" type="image/x-icon">
-    <title>Document</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+        crossorigin="anonymous">
     <!--css-->
-    <link rel="stylesheet" href="css/index.css"> 
-
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <!-- Title -->
+    <title>Portfolio - Nombre Apelldio</title>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 </head>
+
 <body>
-    <header>   
-            
-        <!--navegation-->
+    <!-- HEADER -->
+    <header class="header">
+        <!-- NAV -->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
@@ -30,23 +35,23 @@
                 <div class="collapse navbar-collapse" id="navbar-toggler">
                     <!-- Logo -->
                     <a class="navbar-brand" href="#">
-                        <img src="./src/img/logo.png" alt="Logo">
+                        <img src="../img/logo.png" alt="Logo">
                     </a>
-                    <ul class="navbar-nav align-items-center">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                            <a class="nav-link" href="../../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./about-me.html">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./proyect.html">Proyectos</a>
+                            <a class="nav-link" href="./projects.html">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blog.html">Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contacto</a>
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -71,22 +76,37 @@
     <div class="container-form">
 
         <!--Form-->
+        
         <div class="form">
-            <h3>Ponte en contacto conmigo</h3>
-            <div class="mb-3">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ingrese su email">
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apellido">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comentario"></textarea>
-              </div>
+            <div>
+                <h3>Ponte en contacto conmigo</h3>
+                <div class="mb-3">
+                    <input type="email" 
+                    class="form-control" 
+                    id="exampleFormControlInput1" 
+                    placeholder="ingrese su email">
+                </div>
+                <div class="mb-3">
+                    <input type="text" 
+                    class="form-control" 
+                    id="formGroupExampleInput" 
+                    placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="text" 
+                    class="form-control" 
+                    id="formGroupExampleInput" 
+                    placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" 
+                    id="exampleFormControlTextarea1" 
+                    rows="3"
+                    placeholder="Comentario"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
 
-              <button type="button" class="btn btn-primary">Enviar</button>
         </div>
 
         <!--social links-->
@@ -107,7 +127,7 @@
 
     <!--parting line-->
     <div class="separador"></div>
-    
+
     <!--section footer-->
     <div class="footer">
         <footer>
@@ -115,8 +135,11 @@
         </footer>
     </div>
 
+
+
+
     <!-- Script Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
 </body>
