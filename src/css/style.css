@@ -36,6 +36,7 @@ the logo disappears in cell size
 .navbar .container-fluid .collapse .navbar-nav .nav-item {
     font-size: 18px;
     position: relative;
+    height: 50px;
 }
 
 /* an extra element is created that will allow me to decorate each link */
