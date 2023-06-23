@@ -450,6 +450,13 @@ the logo disappears in cell size
     width: 18rem;
 }
 
+.blogButton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width:992px){
     .containerCards{
         flex-direction: row;
