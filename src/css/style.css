@@ -167,12 +167,14 @@ the logo disappears in cell size
 
 .home .home-contentMain .home-containerNetworks a img {
     width: 60px;
+    height: 60px;
     background-color: #fff;
 }
 
 @media screen and (min-width:992px) {
     .home .home-contentMain .home-containerNetworks a img {
         width: 80px;
+        height: 80px;
     }
 }
 
