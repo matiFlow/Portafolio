@@ -1,0 +1,125 @@
+<!--Esto es la estructura de la pagina web-->
+
+<!DOCTYPE html5>
+
+<!--HTML = LENGUAJE DE MARCADO DE HIPERTEXTO-->
+
+<html lang="es">
+
+    <head> 
+        <title>Primera pagina web</title> <!--Titulo de la pagina-->
+
+        <!-- informacion sobre la pagina web o contenido para el naveador-->
+        <meta charset="utf-8"/> <!--Sirve para mostrar que vamos a utilizar distintos lenguajes, titulos o caracteres en nuestra pagina web-->
+        <meta name="informacion" content="Etiquetas de html"/> <!--Informacion del contenido de la pagina--> 
+        <meta name="author" content="Matias"/> <!-- Nombre del autor de la pagina-->
+        <meta name="keywords" content="Etiquetas, html"/> <!-- Palabras claves para cuando los usuarios busquen por el navegador utilizando estas palabras-->
+        <!--Aqui avajo escribimos las reglas de css que queremos que afecte a toda la pagina-->
+        <link rel="stylesheet" href="style.css"> <!--Se enlaza un archivo de css-->
+        <script src="app.js" defer></script>
+
+
+    </head>
+
+    <body> <!--Cuerpo-->
+        <!--<header style="background: red;"> esto es la cabecera --> <!--Style permite agregar estilos a un elemento html
+            <h1>Titulo de la pagina</h1>
+            <time datetime="16/12/2022">Publicado 16-12-2022</time>
+        </header> -->
+
+        <div class="contenedor"> <!--Para agregar diviciones, son cajas vacias,
+            nos sirve para agregar informacion-->
+            <header class="cabecera"> <!--Se agrea un id para darle a la cabecera un identificador unico-->
+                <div>MI BLOG</div>
+            </header>
+            <nav class="menu">
+                
+            <ul class="lista" id="lista">
+                <li class="elemento">Sobre nosotros</li>
+                <li class="elemento">Ayuda</li>
+                <li class="elemento">Descargar PDF</li>
+                <li class="elemento">Descargar imagen</li>
+            </ul>
+            </nav>
+            
+            <section class="seccion"><!-- Sirve para colocar nuestro contenido princial, almacena contenido principal-->
+
+                <article class="articulo1"><!--Contenido repetitivo o comun, como fechas, titulos o parrafos-->
+
+                    <time datetime="25/12/2022"> Domingo 25 de diciembre de 2023</time>
+
+                    <hgroup><!--Sirve para agrupar encavezados o gerarquerizar-->
+                        <h1>Titulo del primer parrafo</h1>
+                        <h2 class="tituo2">Subtitulo del primer articulo</h2>
+                    </hgroup>
+
+                    <p class="contenido-art1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quia dolorem sequi?
+                        Lorem ipsum, <small class="text"><!--Permite decirle algunas partes del parrafo que son improtantes--> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus quod fugit voluptas quis iste quibusdam eligendi expedita. Dolores,
+                        voluptates officiis voluptatibus ipsum quia error
+                        quam voluptas laborum, quaerat sequi ipsam.
+                        </small> sit amet consectetur adipisicing elit. I
+                        llo aut quod ratione fugiat.
+                        <cite>Non a, voluptatem</cite> id deserunt voluptatum quam,
+                        aliquam architecto <span><!--Esta etiqueta permite alterar el contenido por medio de css--> doloremque dolore</span>  adipisci earum provident est sapiente in?
+                    </p>
+
+                    <img src="images/css-329x216.jpg" alt=""> <!--Etiqueta para colocar imagenes a la pagina-->
+    
+                    <footer> <!--El foother, en este caso, hace encapie en esta seccion del codigo en particular-->
+                        Lorem ipsum dolor sit amet 
+                    </footer>
+                    
+                    <address><!--Es para decirle al navegador que este enlace es una direccion de internet-->
+
+                        <a href="http://google.com"> <!--Es una etiqueta que cuenta con un atributo donde colocaremos el enlace de una pagina. Etiqueta para enlazar-->
+                            Navegador Google
+                        </a>
+
+                    </address>
+
+                </article> 
+    
+                <article class="articulo2"> <!--Class es un selector para reutilizar multiples elementos-->
+
+                    <time datetime="20/08/2022">Miercoles 20 de agosto de 2022</time>
+
+                    <hgroup>
+                        <h1 class="tituko1">Titulo del segunso articulo</h1>
+                        <h2 class="tituki2">Titulo del segundo articulo</h2>
+                    </hgroup>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Cupiditate officiis mollitia vitae vero voluptates veniam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptates error nemo suscipit ducimus quibusdam doloremque.
+                        Beatae, sit aperiam. Obcaecati ex voluptate quisquam voluptatum esse?
+                    </p>
+
+                    <footer>Lorem ipsum dolor sit amet consectetur</footer>
+
+                </article>
+    
+            </section> 
+            <aside class="aside"> <!-- Es para el contenido lateral-->
+
+                <blockquote> <!--Para colocar citas que este relacionado con el contenido o block que estamos creando o de algun sitio web-->
+                    Mensaje 1
+                </blockquote>
+    
+                <blockquote cite="http://Facebock.com"> <!--Esto es un ejemplo de un enlace-->
+                    Mensaje 2
+                </blockquote>
+
+            </aside>
+    
+            <footer class="footer"> <!--Contenido de pie de pagina-->
+                Lorem ipsum dolor sit amet.
+            </footer>    
+        
+        </div>
+
+    </body>
+
+</html>
+
