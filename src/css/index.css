@@ -115,6 +115,7 @@ the logo disappears in cell size
         width: min-content;
         /* reduces all leftover space and only occupies its content, similar to inline */
         margin: 0 auto;
+        
     }
 
 }
@@ -127,9 +128,10 @@ the logo disappears in cell size
     }
 }
 
-.home .home-contentMain .home-containerNetworks a img {
+.home .home-contentMain .home-containerNetworks a svg {
     width: 60px;
     background-color: #fff;
+    width: 50px;
 }
 
 @media screen and (min-width:992px) {
