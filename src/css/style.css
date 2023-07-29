@@ -1,8 +1,7 @@
-
 /* SECTION HEADER */
 
-body {
-    background-color: #061932;
+.header {
+    min-height: 230px;
 }
 
 @media screen and (max-width:767px) {
@@ -25,23 +24,8 @@ the logo disappears in cell size
     display: none;
 }
 
-
-.navbar .container-fluid > img {
-    height: 56px;
-    filter: drop-shadow(2px 4px 6px white);
-}
-
-.navbar .container-fluid .collapse .navbar-brand img{
-    filter: drop-shadow(2px 4px 6px white);
-}
-
-
-/* The logo that is in mobile mode disappears so that the logo that is in desktop mode appears */
-
-@media screen and (min-width: 768px) {
-    .navbar .container-fluid > img {
-        display: none;
-    }
+.navbar .container-fluid .collapse {
+    margin-bottom: 15px;
 }
 
 /* it is not necessary to position it as flex because bootstrap already places it as default */
@@ -70,12 +54,6 @@ the logo disappears in cell size
     cursor: pointer;
 }
 
-.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
-    color: #C1CDEE;
-    font-family: 'Noto Sans Display', sans-serif;
-    letter-spacing: 3px;
-}
-
 /* an extra element is created that will allow me to decorate each link */
 .navbar .container-fluid .collapse .navbar-nav .nav-item::after { 
     content: "";
@@ -83,7 +61,7 @@ the logo disappears in cell size
     border-radius: 20px;
     width: 0;
     height: 5px;
-    background-color: #67748F;
+    background-color: red;
     transition: width 0.3s;
 }
 
@@ -112,13 +90,11 @@ the logo disappears in cell size
 /* SECTION MAIN > HOME */
 
 .main {
-    background-color: #061932;
-}
-
-@media screen and (max-width:992px) {
-    main {
-        min-height: 80vh;
-    }
+    background: url("../img/background-home.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .home .home-contentMain {
@@ -143,18 +119,15 @@ the logo disappears in cell size
 }
 
 .home .home-contentMain .home-contentTitle {
-    color: #67748F;
-    align-self: center;
+    color: white;
+    align-self: end;
 }
-
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .home .home-contentMain .home-contentTitle {
         width: 82%;
         margin: 0 auto;
-        align-self: end;
-        padding-bottom: 20px;
     }
 }
 
@@ -163,42 +136,13 @@ the logo disappears in cell size
     .home .home-contentMain .home-contentTitle {
         width: 730px;
         align-self: center;
-        padding-bottom: 0;
     }
 }
 
 
 /* Title section home */
-
-.home .home-contentMain .home-contentTitle .home-title {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
-    letter-spacing: 3px;
-    font-size: 20px;
-    word-spacing: 8px;
-}
-
-@media screen and (min-width:550px) {
-    .home .home-contentMain .home-contentTitle .home-title {
-        font-size: 25px;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .home .home-contentMain .home-contentTitle .home-title {
-        font-size: 30px;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .home .home-contentMain .home-contentTitle .home-title {
-        font-size: 40px;
-    }
-}
-
-
 .home .home-contentMain .home-contentTitle .home-title .title-span {
-    color: #C1CDEE;
+    color: red;
 }
 
 /* Social networks */
@@ -233,17 +177,10 @@ the logo disappears in cell size
     }
 }
 
-.home .home-contentMain .home-containerNetworks a svg {
-    width: 50px;
-    height: 80px;
-}
-
-/* breakpoints 768px */
-@media screen and (min-width:768px) {
-    .home .home-contentMain .home-containerNetworks a svg {
-        width: 70px;
-        height: 80px;
-    }
+.home .home-contentMain .home-containerNetworks a img {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
 }
 
 @media screen and (min-width:992px) {
@@ -255,14 +192,12 @@ the logo disappears in cell size
 
 /* SECTION FOOTER */
 
-/* .footer {
-    min-height: 100px;
+.footer {
+    min-height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #C1CDEE;
-    background-color: #061932;
-} */
+}
 
 /* SECTION ABOUT ME */
 
@@ -325,6 +260,8 @@ the logo disappears in cell size
 /* SECTION PROJECTS */
 
 /* the default wallpaper disappears */
+
+
 #body .main {
     background: none;
 }
@@ -333,6 +270,7 @@ the logo disappears in cell size
     display: grid;
     justify-content: center;
     min-height: 550px;
+    margin-bottom: 10px;
 } 
 
 /* breakpoints 992px */
@@ -353,11 +291,50 @@ the logo disappears in cell size
     row-gap: 15px;
 }
 
+.projects .projects-contentMain .projects-containerProyect a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .projects .projects-contentMain .projects-containerProyect .icons, .card-button{
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center;
     padding: 10px;
+}
+
+.projects-contentMain .projects-containerProyect .card{
+    border: 5px solid;
+    animation: cambio-color 7s infinite;
+    transition: transform 1.5s, z-index 0.2s;
+    position: relative;
+}
+
+@keyframes cambio-color {
+    0%{
+        border-color: #c42311;
+    }
+
+    25%{
+        border-color: #4bdbe6;
+    }
+
+    50%{
+        border-color: #f2502c;
+    }
+
+    75%{
+        border-color: #e0d124;
+    }
+
+    100%{
+        border-color: #c42311;
+    }
+}
+
+.projects-contentMain .projects-containerProyect .card:hover{
+    transform: scale(1.2);
+    z-index: 2;
 }
 
 /* breakpoints 768px */
@@ -387,6 +364,8 @@ the logo disappears in cell size
         margin: 0 auto;
     }
 }
+
+
 
 /* SECTION CONTACT */
 
@@ -450,6 +429,7 @@ the logo disappears in cell size
     margin-bottom: 10px;
     height: 40px;
     font-size: 16px;
+    transition: border-radius 1.5s;
 }
 
 .form textarea {
@@ -457,6 +437,34 @@ the logo disappears in cell size
     margin-bottom: 10px;
     resize: none;
     font-size: 16px;
+    transition: border-radius 1.5s;
+}
+
+.form input:focus, textarea:focus{
+    animation: cambio-estilo 7s infinite;
+    border-radius: 20px;
+} 
+
+@keyframes cambio-estilo {
+    0%{
+        border-color: #c42311;
+    }
+
+    25%{
+        border-color: #4bdbe6;
+    }
+
+    50%{
+        border-color: #f2502c;
+    }
+
+    75%{
+        border-color: #e0d124;
+    }
+
+    100%{
+        border-color: #c42311;
+    }
 }
 
 .container-form .form button{
@@ -544,14 +552,9 @@ the logo disappears in cell size
 }
 
 .footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px;
+    height: 70px;
     padding-top: 15px;
     text-align: center;
-    color: #C1CDEE;
-    background-color: #061932;
-    font-size: 20px;
+    background-color: #c1b5b5;
 }
 
