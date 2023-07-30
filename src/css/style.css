@@ -299,6 +299,7 @@ the logo disappears in cell size
 @media screen and (min-width:992px) {
     .aboutMe .aboutMe-contentMain {
         min-height: 750px;
+        grid-template-columns: 1fr .5fr;
     }
 }
 
@@ -405,40 +406,77 @@ the logo disappears in cell size
 
 /* SECTION PROJECTS */
 
-/* the default wallpaper disappears */
-#body .main {
-    background: none;
-}
-
 .projects .projects-contentMain {
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
     min-height: 550px;
+    grid-template-rows: 150px auto;
+    padding-bottom: 25px;
 } 
-
-/* breakpoints 992px */
-@media screen and (min-width:992px) {
-    .projects .projects-contentMain {
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 .projects .projects-contentMain .projects-containerTitle {
     text-align: center;
-    height: 100px;
+    align-self: center;
+    /* height: 100px; */
 }
+
+.projects .projects-contentMain .projects-containerTitle .projects-title {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #C1CDEE;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .projects .projects-contentMain .projects-containerTitle .projects-title {
+        font-size: 30px;
+    }
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .projects .projects-contentMain .projects-containerTitle .projects-title {
+        font-size: 40px;
+    }
+}
+
 
 .projects .projects-contentMain .projects-containerProyect {
     display: grid;
+    justify-content: center;
     row-gap: 15px;
 }
 
-.projects .projects-contentMain .projects-containerProyect .icons, .card-button{
+.projects .projects-contentMain .projects-containerProyect .card {
+    min-height: 400px;
+    width: 270px;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .projects .projects-contentMain .projects-containerProyect .card {
+        margin: 0 auto;
+    }
+}
+
+.projects .projects-contentMain .projects-containerProyect .card:nth-child(1) .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects .projects-contentMain .projects-containerProyect .card .card-body .card-text {
+    margin: 0;
+}
+
+.projects .projects-contentMain .projects-containerProyect .card .card-body .icons, .card-button {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center;
-    padding: 10px;
+    padding: 0;
 }
 
 /* breakpoints 768px */
