@@ -174,7 +174,6 @@ the logo disappears in cell size
 
 
 /* Title section home */
-
 .home .home-contentMain .home-contentTitle .home-title {
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
@@ -348,7 +347,7 @@ the logo disappears in cell size
 }
 
 .aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial {
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 2px;
     font-size: 16px;
     word-spacing: 5px;
@@ -429,6 +428,8 @@ the logo disappears in cell size
     word-spacing: 8px;
 }
 
+
+
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .projects .projects-contentMain .projects-containerTitle .projects-title {
@@ -453,6 +454,96 @@ the logo disappears in cell size
 .projects .projects-contentMain .projects-containerProyect .card {
     min-height: 400px;
     width: 270px;
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .projects .projects-contentMain .projects-containerProyect .card {
+        width: 350px;
+    }
+
+    /*Animation cards*/
+    .projects .projects-contentMain .projects-containerProyect .card {
+        animation: cambio-color 3s infinite;
+        position: relative;
+        transition: transform 2s;
+    }
+
+    @keyframes cambio-color{
+        0%{
+            border: 5px solid #69bca6;
+        }
+
+        25%{
+            border: 5px solid #a8b6d2;
+        }
+
+        50%{
+            border: 5px solid #438f4a;
+        }
+
+        75%{
+            border: 5px solid #8f436e;
+        }
+
+        100%{
+            border: 5px solid #69bca6;
+        }
+    }
+
+    .projects .projects-contentMain .projects-containerProyect .card:hover{
+        transform: scale(1.1);
+    }
+}
+
+.projects .projects-contentMain .projects-containerProyect .card .card-body .card-title{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title{
+        font-size: 22px;
+    }
+}
+
+.projects .projects-contentMain .projects-containerProyect .card .card-body p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .projects .projects-contentMain .projects-containerProyect .card .card-body p{
+        font-size: 17px;
+    }
+}
+
+/* breakpoints 1200px */
+@media screen and (min-width:1200px) {
+    .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title{
+        font-size: 26px;
+    }
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:1200px) {
+    .projects .projects-contentMain .projects-containerProyect .card .card-body p{
+        font-size: 20px;
+    }
+}
+
+.projects .projects-contentMain .projects-containerProyect .card .card-body .icons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.projects .projects-contentMain .projects-containerProyect .card button a{
+    color: #f7f8fa;
+    text-decoration: none;
 }
 
 /* breakpoints 768px */
