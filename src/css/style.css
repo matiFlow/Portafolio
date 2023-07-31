@@ -1,4 +1,3 @@
-
 /* SECTION HEADER */
 
 body {
@@ -7,12 +6,15 @@ body {
 
 @media screen and (max-width:767px) {
     .navbar .navbar-collapse .navbar-nav {
-        max-height: 0; /* 
+        max-height: 0;
+        /* 
         I use this property so that its container measures 0 wide. */
-        overflow: hidden; /* I use this property so that the content that stands out because it is in a width of 0 is completely hidden and does not overlap the content. */
-        transition: max-height 0.9s; /* when I click on the hamburger, the width expands, so the hidden stops hiding the content, it no longer has to hide anything */
+        overflow: hidden;
+        /* I use this property so that the content that stands out because it is in a width of 0 is completely hidden and does not overlap the content. */
+        transition: max-height 0.9s;
+        /* when I click on the hamburger, the width expands, so the hidden stops hiding the content, it no longer has to hide anything */
     }
-    
+
     .navbar .navbar-collapse.show .navbar-nav {
         max-height: 300px;
     }
@@ -31,12 +33,12 @@ the logo disappears in cell size
 }
 
 
-.navbar .container-fluid > img {
+.navbar .container-fluid>img {
     height: 56px;
     filter: drop-shadow(2px 4px 6px white);
 }
 
-.navbar .container-fluid .collapse .navbar-brand img{
+.navbar .container-fluid .collapse .navbar-brand img {
     filter: drop-shadow(2px 4px 6px white);
 }
 
@@ -44,7 +46,7 @@ the logo disappears in cell size
 /* The logo that is in mobile mode disappears so that the logo that is in desktop mode appears */
 
 @media screen and (min-width: 768px) {
-    .navbar .container-fluid > img {
+    .navbar .container-fluid>img {
         display: none;
     }
 }
@@ -82,7 +84,7 @@ the logo disappears in cell size
 }
 
 /* an extra element is created that will allow me to decorate each link */
-.navbar .container-fluid .collapse .navbar-nav .nav-item::after { 
+.navbar .container-fluid .collapse .navbar-nav .nav-item::after {
     content: "";
     position: absolute;
     border-radius: 20px;
@@ -340,6 +342,7 @@ the logo disappears in cell size
 
 /* breakpoints 992px */
 @media screen and (min-width:992px) {
+
     /* a fixed height is added to be able to have space and thus use space-evenly */
     .aboutMe .aboutMe-contentMain .aboutMe-containerDescription {
         justify-content: space-evenly;
@@ -382,7 +385,7 @@ the logo disappears in cell size
 
 /* breakpoints 1400px */
 @media screen and (min-width:1400px) {
-    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial{
+    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial {
         text-align: initial;
         padding: 30px;
     }
@@ -411,7 +414,7 @@ the logo disappears in cell size
     min-height: 550px;
     grid-template-rows: 150px auto;
     padding-bottom: 25px;
-} 
+}
 
 .projects .projects-contentMain .projects-containerTitle {
     text-align: center;
@@ -469,34 +472,34 @@ the logo disappears in cell size
         transition: transform 2s;
     }
 
-    @keyframes cambio-color{
-        0%{
+    @keyframes cambio-color {
+        0% {
             border: 5px solid #69bca6;
         }
 
-        25%{
+        25% {
             border: 5px solid #a8b6d2;
         }
 
-        50%{
+        50% {
             border: 5px solid #438f4a;
         }
 
-        75%{
+        75% {
             border: 5px solid #8f436e;
         }
 
-        100%{
+        100% {
             border: 5px solid #69bca6;
         }
     }
 
-    .projects .projects-contentMain .projects-containerProyect .card:hover{
+    .projects .projects-contentMain .projects-containerProyect .card:hover {
         transform: scale(1.1);
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .card-title{
+.projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -505,43 +508,43 @@ the logo disappears in cell size
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title{
+    .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
         font-size: 22px;
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body p{
+.projects .projects-contentMain .projects-containerProyect .card .card-body p {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
 }
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .projects .projects-contentMain .projects-containerProyect .card .card-body p{
+    .projects .projects-contentMain .projects-containerProyect .card .card-body p {
         font-size: 17px;
     }
 }
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
-    .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title{
+    .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
         font-size: 26px;
     }
 }
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
-    .projects .projects-contentMain .projects-containerProyect .card .card-body p{
+    .projects .projects-contentMain .projects-containerProyect .card .card-body p {
         font-size: 20px;
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .icons{
+.projects .projects-contentMain .projects-containerProyect .card .card-body .icons {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card button a{
+.projects .projects-contentMain .projects-containerProyect .card button a {
     color: #f7f8fa;
     text-decoration: none;
 }
@@ -563,9 +566,11 @@ the logo disappears in cell size
     margin: 0;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .icons, .card-button {
+.projects .projects-contentMain .projects-containerProyect .card .card-body .icons,
+.card-button {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
     align-items: center;
     padding: 0;
 }
@@ -583,16 +588,18 @@ the logo disappears in cell size
     .projects .projects-contentMain .projects-containerProyect {
         column-gap: 0;
     }
+
     /* center the card */
     .projects-contentMain .projects-containerProyect .card {
         margin: 0 auto;
-    } 
+    }
 }
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
+
     /* I shrink the container to be able to center it */
-    .projects .projects-contentMain .projects-containerProyect  {
+    .projects .projects-contentMain .projects-containerProyect {
         width: 80%;
         margin: 0 auto;
     }
@@ -626,18 +633,21 @@ the logo disappears in cell size
 
 .blog .blog-contentMain .carousel-inner img {
     width: 100%;
-    height: 400px; /* Establece una altura fija para el contenedor de la imagen */
+    height: 400px;
+    /* Establece una altura fija para el contenedor de la imagen */
     object-fit: cover;
 }
 
 .blog .blog-contentMain .card img {
     width: 100%;
-    height: 200px; /* Establece una altura fija para el contenedor de la imagen */
+    height: 200px;
+    /* Establece una altura fija para el contenedor de la imagen */
+    border-radius: 3%;
     object-fit: cover;
 }
 
 /* breakpoints 992px */
-@media screen and (min-width:992px) {    
+@media screen and (min-width:992px) {
 
     /*Animation cards*/
     .blog .blog-contentMain .card {
@@ -646,36 +656,37 @@ the logo disappears in cell size
         transition: transform 2s;
     }
 
-    @keyframes cambio-color{
-        0%{
+    @keyframes cambio-color {
+        0% {
             border: 5px solid #69bca6;
         }
 
-        25%{
+        25% {
             border: 5px solid #a8b6d2;
         }
 
-        50%{
+        50% {
             border: 5px solid #438f4a;
         }
 
-        75%{
+        75% {
             border: 5px solid #8f436e;
         }
 
-        100%{
+        100% {
             border: 5px solid #69bca6;
         }
     }
 
-    .blog .blog-contentMain .card:hover{
+    .blog .blog-contentMain .card:hover {
         transform: scale(1.1);
     }
 }
 
 .blog .blog-contentMain .card {
     width: 100%;
-    height: 350px; 
+    height: 350px;
+    border-radius: 3%;
     transition: transform 0.3s ease;
 }
 
@@ -683,16 +694,28 @@ the logo disappears in cell size
     transform: scale(1.03);
 }
 
-.blog .blog-contentMain .card .card-body .card-title{
+.blog .blog-contentMain .card .card-body .card-title {
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
     text-align: center;
     font-size: 18px;
 }
 
-.blog .blog-contentMain .card .card-body .card-text{
+.blog .blog-contentMain .card .card-body .card-text {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
+}
+
+.containerCards .card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4c39ff;
+    transition: box-shadow 0.5s ease-in-out;
+    transition: transform 0.8s;
+}
+
+.containerCards .card:hover {
+    box-shadow: 0 0 20px #1f1199, 0 0 40px #1f1199, 0 0 80px #1f1199;
+    transform: scale(1.03);
 }
 
 /* breakpoints 768px */
@@ -725,21 +748,21 @@ the logo disappears in cell size
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .blog .blog-contentMain .card .card-body .card-text{
+    .blog .blog-contentMain .card .card-body .card-text {
         font-size: 17px;
     }
 }
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
-    .blog .blog-contentMain .card .card-body .card-text{
+    .blog .blog-contentMain .card .card-body .card-text {
         font-size: 20px;
     }
 }
 
 /* SECTION CONTACT */
 
-.container-contacto{
+.container-contacto {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -780,21 +803,21 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:992px) {
-    .form > div {
+    .form>div {
         width: 80%;
     }
 }
 
-.form h3{
+.form h3 {
     margin-bottom: 20px;
     text-align: center;
 }
 
-.form > div button {
+.form>div button {
     align-self: end;
 }
 
-.form input{
+.form input {
     width: 100%;
     margin-bottom: 10px;
     height: 40px;
@@ -808,7 +831,7 @@ the logo disappears in cell size
     font-size: 16px;
 }
 
-.container-form .form button{
+.container-form .form button {
     background-color: #2604eb;
     border-radius: 10%;
     font-size: 16px;
@@ -843,7 +866,7 @@ the logo disappears in cell size
 
 
 
-.separador{
+.separador {
     background-color: #585757;
     width: 100%;
     height: 2.5px;
@@ -851,11 +874,11 @@ the logo disappears in cell size
 
 /*blog section*/
 
-.title-blog{
+.title-blog {
     text-align: center;
 }
 
-.containerCards{
+.containerCards {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -864,35 +887,35 @@ the logo disappears in cell size
     min-height: 550px;
 }
 
-.containerCards .card:nth-child(1){
+.containerCards .card:nth-child(1) {
     width: 18rem;
 }
 
-.blogButton{
+.blogButton {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: 10px;
 }
 
-@media screen and (min-width:992px){
-    .containerCards{
+@media screen and (min-width:992px) {
+    .containerCards {
         flex-direction: row;
         justify-content: center;
     }
 
-    .containerCards .card:nth-child(1){
+    .containerCards .card:nth-child(1) {
         width: 25rem;
         margin-left: 10px;
     }
 
-    .containerCards .card:nth-child(2){
+    .containerCards .card:nth-child(2) {
         width: 20rem;
         margin-left: 10px;
     }
 }
 
-.footer{
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -918,4 +941,3 @@ the logo disappears in cell size
         font-size: 20px;
     }
 }
-
