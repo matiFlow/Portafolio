@@ -787,6 +787,12 @@ the logo disappears in cell size
     word-spacing: 8px;
 }
 
+@media screen and (min-width:768px) {
+    .contact-contentMain .container-contact h1{
+        font-size: 30px;
+    }
+}
+
 .contact-contentMain .container-form .form h5 {
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
@@ -795,29 +801,40 @@ the logo disappears in cell size
     color: #C1CDEE;
     margin-bottom: 40px;
 }
+
+@media screen and (min-width:768px) {
+    .contact-contentMain .container-form .form h5{
+        font-size: 22px;
+    }
+}
+
 .contact-contentMain .container-form {
     padding: 0 10px;
+}
+
+@media screen and (min-width:992px) {
+    .contact-contentMain .container-form{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .contact-contentMain .container-form .form{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .contact-contentMain .container-form .form .btn {
     width: 100%;
 }
 
-
-@media screen and (min-width:768px) {
-    .container-form {
-        flex-direction: row;
+@media screen and (min-width:992px) {
+    .contact-contentMain .container-form .form .btn{
+        width: 50%;
+        margin: 0 auto;
     }
-}
-
-@media screen and (min-width:768px) {
-    .form {
-        width: 60%;
-    }
-}
-
-.form>div button {
-    align-self: end;
 }
 
 .form input {
@@ -932,6 +949,6 @@ the logo disappears in cell size
 
 @media screen and (max-width:768px) {
     .footer {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
