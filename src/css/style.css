@@ -793,6 +793,12 @@ the logo disappears in cell size
     }
 }
 
+@media screen and (min-width:1200px) {
+    .contact-contentMain .container-contact h1{
+        font-size: 40px;
+    }
+}
+
 .contact-contentMain .container-form .form h5 {
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
@@ -805,6 +811,12 @@ the logo disappears in cell size
 @media screen and (min-width:768px) {
     .contact-contentMain .container-form .form h5{
         font-size: 22px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .contact-contentMain .container-form .form h5{
+        font-size: 25px;
     }
 }
 
