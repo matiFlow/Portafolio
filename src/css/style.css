@@ -835,6 +835,8 @@ the logo disappears in cell size
     .contact-contentMain .container-form .form{
         display: flex;
         flex-direction: column;
+        width: 650px;
+        margin: 0 auto;
     }
 }
 
