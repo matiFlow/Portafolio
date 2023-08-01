@@ -824,19 +824,60 @@ the logo disappears in cell size
     padding: 0 10px;
 }
 
-@media screen and (min-width:992px) {
-    .contact-contentMain .container-form{
-        width: 80%;
-        margin: 0 auto;
+.contact-contentMain .container-form .form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contact-contentMain .container-form .form .label {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+@media screen and (min-width:768px) {
+    .contact-contentMain .container-form .form .label {
+        font-size: 18px;
     }
 }
 
+@media screen and (min-width:1200px) {
+    .contact-contentMain .container-form .form .label {
+        font-size: 20px;
+    }
+}
+
+.contact-contentMain .container-form .form div{
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.contact-contentMain .container-form .form div .form-control{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid #fff;
+    background-color: transparent;
+    transition: outline-color 250ms;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contact-contentMain .container-form .form div .form-control:focus {
+    outline-color: #3c50eb;
+}  
+
+@media screen and (min-width:576px) {
+    .contact-contentMain .container-form .form{
+        width: 530px;
+    }
+}
+
+
 @media screen and (min-width:992px) {
     .contact-contentMain .container-form .form{
-        display: flex;
-        flex-direction: column;
         width: 650px;
-        margin: 0 auto;
     }
 }
 
@@ -866,8 +907,6 @@ the logo disappears in cell size
 }
 
 .iconos {
-    /* display: flex;
-    margin: 0 auto; */
     display: flex;
     justify-content: space-evenly;
     width: 85%;
