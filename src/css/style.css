@@ -33,7 +33,7 @@ the logo disappears in cell size
 }
 
 
-.navbar .container-fluid>img {
+.navbar .container-fluid .logo-mobile img {
     height: 56px;
     filter: drop-shadow(2px 4px 6px white);
 }
@@ -46,7 +46,7 @@ the logo disappears in cell size
 /* The logo that is in mobile mode disappears so that the logo that is in desktop mode appears */
 
 @media screen and (min-width: 768px) {
-    .navbar .container-fluid>img {
+    .navbar .container-fluid .logo-mobile {
         display: none;
     }
 }
