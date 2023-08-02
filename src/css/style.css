@@ -203,8 +203,12 @@ the logo disappears in cell size
 }
 
 
-.home .home-contentMain .home-contentTitle .home-title .title-span {
+.home .home-contentMain .home-contentTitle .home-title .title-name {
     color: #C1CDEE;
+}
+
+.home .home-contentMain .home-contentTitle .home-title .title-portafolio {
+    color: #6ddc9f;
 }
 
 /* Social networks */
@@ -469,7 +473,7 @@ the logo disappears in cell size
     .projects .projects-contentMain .projects-containerProyect .card {
         animation: cambio-color 3s infinite;
         position: relative;
-        transition: transform 2s;
+        transition: transform 1s;
     }
 
     @keyframes cambio-color {
@@ -495,7 +499,7 @@ the logo disappears in cell size
     }
 
     .projects .projects-contentMain .projects-containerProyect .card:hover {
-        transform: scale(1.1);
+        transform: scale(1.03);
     }
 }
 
