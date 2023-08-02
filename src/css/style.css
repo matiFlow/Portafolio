@@ -1,14 +1,32 @@
-/* SECTION HEADER */
+
 
 body {
     background-color: #061932;
+    height: 100vh;
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content 77px;
+    height: 100%;
+}
+
+/* Section HEADER */
+
+.header {
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width:768px) {
+    .header {
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width:767px) {
     .navbar .navbar-collapse .navbar-nav {
         max-height: 0;
-        /* 
-        I use this property so that its container measures 0 wide. */
+        /* I use this property so that its container measures 0 wide. */
         overflow: hidden;
         /* I use this property so that the content that stands out because it is in a width of 0 is completely hidden and does not overlap the content. */
         transition: max-height 0.9s;
@@ -96,7 +114,6 @@ the logo disappears in cell size
 
 .navbar .container-fluid .collapse .navbar-nav .nav-item:hover::after {
     width: 100%;
-
 }
 
 /* breakpoints 768px */
@@ -120,47 +137,40 @@ the logo disappears in cell size
 
 .main {
     background-color: #061932;
+    height: 100%;
 }
 
-@media screen and (max-width:992px) {
-    main {
-        min-height: 80vh;
+.main .home {
+    height: 100%;
+}
+
+@media screen and (min-width:992px) {
+    .main {
+        align-self: center;
     }
+    
 }
 
 .home .home-contentMain {
-    min-height: 550px;
     display: grid;
-    grid-template-rows: 1fr 300px;
+    height: 100%;
+    /* grid-template-rows: 1fr 2fr; */
     align-items: center;
     text-align: center;
 }
 
-/* breakpoints 992px */
-@media screen and (min-width:992px) {
-    .home .home-contentMain {
-        min-height: 700px;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .home .home-contentMain {
-        min-height: 750px;
-    }
-}
 
 .home .home-contentMain .home-contentTitle {
     color: #67748F;
-    align-self: center;
+    align-self: end;
 }
 
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .home .home-contentMain .home-contentTitle {
-        width: 82%;
+        width: 80%;
         margin: 0 auto;
-        align-self: end;
         padding-bottom: 20px;
     }
 }
@@ -215,7 +225,7 @@ the logo disappears in cell size
 .home .home-contentMain .home-containerNetworks {
     display: grid;
     gap: 15px;
-    justify-content: center;
+    align-self: center;
 }
 
 /* breakpoints 768px */
@@ -243,6 +253,13 @@ the logo disappears in cell size
     }
 }
 
+/* breakpoints 1200px */
+@media screen and (min-width:1200px) {
+    .home .home-contentMain .home-containerNetworks {
+        align-self: center;
+    }
+}
+
 .home .home-contentMain .home-containerNetworks a svg {
     width: 50px;
     height: 80px;
@@ -263,30 +280,16 @@ the logo disappears in cell size
     }
 }
 
-/* SECTION FOOTER */
+/* Section ABOUT ME */
 
-/* .footer {
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #C1CDEE;
-    background-color: #061932;
-} */
-
-/* SECTION ABOUT ME */
-
-/* breakpoints 767px */
-@media screen and (max-width:767px) {
-    .aboutMe {
-        margin-top: 30px;
-    }
+.aboutMe {
+    height: 100%;
 }
 
 .aboutMe .aboutMe-contentMain {
-    min-height: 550px;
     display: grid;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-rows: 1.4fr 1fr;
+    height: 100%;
     align-items: center;
     color: white;
 }
@@ -294,17 +297,9 @@ the logo disappears in cell size
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .aboutMe .aboutMe-contentMain {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr .5fr;
         grid-template-rows: 1fr;
         margin-top: 0;
-    }
-}
-
-/* breakpoints 992px */
-@media screen and (min-width:992px) {
-    .aboutMe .aboutMe-contentMain {
-        min-height: 750px;
-        grid-template-columns: 1fr .5fr;
     }
 }
 
@@ -332,30 +327,19 @@ the logo disappears in cell size
     .aboutMe .aboutMe-contentMain .aboutMe-containerDescription h1 {
         font-size: 30px;
         margin-bottom: 0;
-        align-self: end;
+        align-self: center;
     }
 }
 
 @media screen and (min-width:992px) {
     .aboutMe .aboutMe-contentMain .aboutMe-containerDescription h1 {
         font-size: 40px;
-        align-self: end;
         margin-bottom: 25px;
-    }
-}
-
-/* breakpoints 992px */
-@media screen and (min-width:992px) {
-
-    /* a fixed height is added to be able to have space and thus use space-evenly */
-    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription {
-        justify-content: space-evenly;
     }
 }
 
 .aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial {
     font-family: 'Rubik', sans-serif;
-    letter-spacing: 2px;
     font-size: 16px;
     word-spacing: 5px;
 }
@@ -363,7 +347,7 @@ the logo disappears in cell size
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial {
-        align-self: center;
+        align-self: start;
     }
 }
 
@@ -398,6 +382,13 @@ the logo disappears in cell size
 .aboutMe .aboutMe-contentMain .aboutMe-profile {
     text-align: center;
 }
+
+/* breakpoints 576px */
+@media (min-width: 576px) and (max-width: 767px) {
+    .aboutMe .aboutMe-contentMain .aboutMe-profile {
+        align-self: start;
+    }
+  }
 
 .aboutMe .aboutMe-contentMain .aboutMe-profile svg {
     height: 150px;
@@ -987,24 +978,19 @@ the logo disappears in cell size
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px;
     text-align: center;
     color: #C1CDEE;
     background-color: #061932;
     font-size: 18px;
+    height: 100%;
+    align-self: center;
 }
 
 .footer p {
     margin: 0;
 }
 
-@media screen and (max-width:576px) {
-    .footer {
-        padding: 15px 10px 0;
-    }
-}
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer {
         font-size: 16px;
     }
