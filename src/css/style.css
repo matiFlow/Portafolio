@@ -288,7 +288,6 @@ the logo disappears in cell size
 
 .aboutMe .aboutMe-contentMain {
     display: grid;
-    grid-template-rows: 1.4fr 1fr;
     height: 100%;
     align-items: center;
     color: white;
@@ -403,18 +402,22 @@ the logo disappears in cell size
 
 /* SECTION PROJECTS */
 
+#bodyProject {
+    height: 100%;
+}
+
+.projects {
+    padding: 30px 30px 30px 30px;
+}
+
 .projects .projects-contentMain {
     display: grid;
-    /* justify-content: center; */
-    min-height: 550px;
     grid-template-rows: 150px auto;
-    padding-bottom: 25px;
 }
 
 .projects .projects-contentMain .projects-containerTitle {
     text-align: center;
     align-self: center;
-    /* height: 100px; */
 }
 
 .projects .projects-contentMain .projects-containerTitle .projects-title {
@@ -445,21 +448,39 @@ the logo disappears in cell size
 
 .projects .projects-contentMain .projects-containerProyect {
     display: grid;
-    justify-content: center;
-    row-gap: 15px;
+    row-gap: 10px;
 }
 
+
 .projects .projects-contentMain .projects-containerProyect .card {
-    min-height: 400px;
-    width: 270px;
+    padding: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.projects .projects-contentMain .projects-containerProyect .card:hover {
+    background-color: #061932;
+    color: #fff;
+}
+
+
+/* breakpoints 576px */
+@media screen and (min-width:576px) {
+    .projects .projects-contentMain .projects-containerProyect .card {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .projects .projects-contentMain .projects-containerProyect .card {
+        width: auto;
+    }
 }
 
 /* breakpoints 992px */
 @media screen and (min-width:992px) {
-    .projects .projects-contentMain .projects-containerProyect .card {
-        width: 350px;
-    }
-
     /*Animation cards*/
     .projects .projects-contentMain .projects-containerProyect .card {
         animation: cambio-color 3s infinite;
@@ -544,12 +565,7 @@ the logo disappears in cell size
     text-decoration: none;
 }
 
-/* breakpoints 768px */
-@media screen and (min-width:768px) {
-    .projects .projects-contentMain .projects-containerProyect .card {
-        margin: 0 auto;
-    }
-}
+
 
 .projects .projects-contentMain .projects-containerProyect .card:nth-child(1) .card-body {
     display: flex;
@@ -573,17 +589,14 @@ the logo disappears in cell size
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .projects .projects-contentMain .projects-containerProyect {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 20px;
     }
 }
 
 /* breakpoints 992px */
 @media screen and (min-width:992px) {
-    .projects .projects-contentMain .projects-containerProyect {
-        column-gap: 0;
-    }
-
     /* center the card */
     .projects-contentMain .projects-containerProyect .card {
         margin: 0 auto;
@@ -592,7 +605,6 @@ the logo disappears in cell size
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
-
     /* I shrink the container to be able to center it */
     .projects .projects-contentMain .projects-containerProyect {
         width: 80%;
@@ -605,7 +617,6 @@ the logo disappears in cell size
 
 .blog .blog-contentMain {
     display: grid;
-    /* justify-content: center; */
     min-height: 550px;
     grid-template-rows: 150px auto;
     padding-bottom: 25px;
@@ -614,7 +625,6 @@ the logo disappears in cell size
 .blog .blog-contentMain .blog-containerTitle {
     text-align: center;
     align-self: center;
-    /* height: 100px; */
 }
 
 .blog .blog-contentMain .blog-containerTitle .blog-title {
