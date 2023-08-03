@@ -556,32 +556,38 @@ the logo disappears in cell size
 }
 
 .projects .projects-contentMain .projects-containerProyect .card .card-body .icons {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
 }
+
+.projects .projects-contentMain .projects-containerProyect .card .card-body .icons i {
+    line-height: normal;
+}
+
+.projects .projects-contentMain .projects-containerProyect .card .card-body .icons i::before {
+    font-size: 50px;
+}
+
 
 .projects .projects-contentMain .projects-containerProyect .card button a {
     color: #f7f8fa;
     text-decoration: none;
 }
 
-
-
-.projects .projects-contentMain .projects-containerProyect .card:nth-child(1) .card-body {
+.projects .projects-contentMain .projects-containerProyect .card .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .projects .projects-contentMain .projects-containerProyect .card .card-body .card-text {
     margin: 0;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .icons,
-.card-button {
+.projects .projects-contentMain .projects-containerProyect .card .card-body .card-button {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
     padding: 0;
 }
