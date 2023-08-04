@@ -154,7 +154,6 @@ the logo disappears in cell size
 .home .home-contentMain {
     display: grid;
     height: 100%;
-    /* grid-template-rows: 1fr 2fr; */
     align-items: center;
     text-align: center;
 }
@@ -773,6 +772,10 @@ the logo disappears in cell size
 
 /* SECTION CONTACT */
 
+#bodyContact{
+    height: 100%;
+}
+
 .mainContact {
     display: grid;
     align-items: center;
@@ -780,7 +783,13 @@ the logo disappears in cell size
 
 .contact-contentMain {
     display: grid;
-    grid-auto-rows: 150px auto;
+    grid-template-rows: 120px auto;
+}
+
+@media screen and (min-width:768px) {
+    .contact-contentMain {
+        grid-template-rows: 150px auto;
+    }
 }
 
 .contact-contentMain .container-contact {
@@ -816,7 +825,7 @@ the logo disappears in cell size
     text-align: center;
     font-size: 18px;
     color: #C1CDEE;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 @media screen and (min-width:768px) {
@@ -842,7 +851,7 @@ the logo disappears in cell size
 }
 
 .contact-contentMain .container-form .form .label {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #fff;
     font-family: 'Rubik', sans-serif;
 }
@@ -857,11 +866,6 @@ the logo disappears in cell size
     .contact-contentMain .container-form .form .label {
         font-size: 20px;
     }
-}
-
-.contact-contentMain .container-form .form div{
-    margin-bottom: 25px;
-    position: relative;
 }
 
 .contact-contentMain .container-form .form div .form-control{
@@ -894,12 +898,13 @@ the logo disappears in cell size
 
 .contact-contentMain .container-form .form .btn {
     width: 100%;
+    margin-top: 15px;
 }
 
 @media screen and (min-width:992px) {
     .contact-contentMain .container-form .form .btn{
         width: 50%;
-        margin: 0 auto;
+        margin: 15px auto 5px;
     }
 }
 
@@ -920,25 +925,28 @@ the logo disappears in cell size
 .iconos {
     display: flex;
     justify-content: space-evenly;
-    width: 85%;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:576px) {
     .iconos {
-        width: 40%;
-        align-items: center;
-        width: min-content;
+        margin: 25px auto;
+        width: 530px;
     }
 }
 
-.iconos i {
-    font-size: 40px;
-    margin: 10px;
-    color: #2604eb;
-    margin-top: 35px;
+
+
+.iconos svg {
+    font-size: 35px;
+    color: #f8f8ff;
 }
 
+@media screen and (min-width:768px) {
+    .iconos svg {
+        font-size: 40px;
+    }
+}
 
 
 .separador {
