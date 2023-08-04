@@ -55,15 +55,15 @@ the logo disappears in cell size
 
 
 .navbar .container-fluid .logo-mobile img {
-    width: auto;
+    width: 56px;
     height: 56px;
     filter: drop-shadow(2px 4px 6px white);
 }
 
 .navbar .container-fluid .collapse .navbar-brand img {
     filter: drop-shadow(2px 4px 6px white);
-    width: auto;
-    height: auto;
+    width: 90px;
+    height: 70px;
 }
 
 
@@ -132,10 +132,6 @@ the logo disappears in cell size
     .navbar .container-fluid .collapse {
         display: flex;
         justify-content: space-between;
-    }
-
-    .navbar .container-fluid .collapse .navbar-brand img {
-        height: 70px;
     }
 }
 
