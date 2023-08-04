@@ -752,6 +752,10 @@ the logo disappears in cell size
     transform: scale(1.03);
 }
 
+.containerCards .card:nth-child(2) {
+    width: 18em;
+}
+
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .blog .blog-contentMain .blog-containerTitle .blog-title {
