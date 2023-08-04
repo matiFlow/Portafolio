@@ -776,6 +776,13 @@ the logo disappears in cell size
     height: 100%;
 }
 
+@media screen and (min-height:950px) {
+    #bodyContact{
+        height: 100vh;
+    }
+    
+}
+
 .mainContact {
     display: grid;
     align-items: center;
@@ -898,7 +905,7 @@ the logo disappears in cell size
 
 .contact-contentMain .container-form .form .btn {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 @media screen and (min-width:992px) {
@@ -925,7 +932,7 @@ the logo disappears in cell size
 .iconos {
     display: flex;
     justify-content: space-evenly;
-    margin: 15px auto;
+    margin: 20px auto;
 }
 
 @media screen and (min-width:576px) {
