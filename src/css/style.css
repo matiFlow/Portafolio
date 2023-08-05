@@ -10,8 +10,16 @@ body {
     height: 100%;
 }
 
-.container-fluid main > section {
-    min-height: 650px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    color: #C1CDEE;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Section HEADER */
@@ -166,7 +174,6 @@ the logo disappears in cell size
     align-self: end;
 }
 
-
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .home .home-contentMain .home-contentTitle {
@@ -185,14 +192,9 @@ the logo disappears in cell size
     }
 }
 
-
 /* Title section home */
 .home .home-contentMain .home-contentTitle .home-title {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
-    letter-spacing: 3px;
     font-size: 20px;
-    word-spacing: 8px;
 }
 
 @media screen and (min-width:550px) {
@@ -287,13 +289,6 @@ the logo disappears in cell size
     height: 100%;
 }
 
-/* breakpoints 768px */
-@media screen and (max-width:576px) {
-    .aboutMe {
-        padding-top: 30px;
-    }
-}
-
 .aboutMe .aboutMe-contentMain {
     display: grid;
     height: 100%;
@@ -319,13 +314,8 @@ the logo disappears in cell size
 }
 
 .aboutMe .aboutMe-contentMain .aboutMe-containerDescription h1 {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
     text-align: center;
-    letter-spacing: 3px;
     font-size: 25px;
-    word-spacing: 8px;
-    color: #C1CDEE;
     margin-bottom: 30px;
 }
 
@@ -345,8 +335,7 @@ the logo disappears in cell size
     }
 }
 
-.aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial {
-    font-family: 'Rubik', sans-serif;
+.aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial .aboutMe-detail {
     font-size: 16px;
     word-spacing: 5px;
 }
@@ -415,7 +404,7 @@ the logo disappears in cell size
 }
 
 .projects {
-    padding: 30px;
+    padding: 0 30px 30px 30px;
 }
 
 .projects .projects-contentMain {
@@ -429,15 +418,8 @@ the logo disappears in cell size
 }
 
 .projects .projects-contentMain .projects-containerTitle .projects-title {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
     font-size: 25px;
-    color: #C1CDEE;
-    letter-spacing: 3px;
-    word-spacing: 8px;
 }
-
-
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
@@ -524,8 +506,6 @@ the logo disappears in cell size
 }
 
 .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
     text-align: center;
     font-size: 18px;
 }
@@ -538,7 +518,6 @@ the logo disappears in cell size
 }
 
 .projects .projects-contentMain .projects-containerProyect .card .card-body p {
-    font-family: 'Rubik', sans-serif;
     font-size: 16px;
 }
 
@@ -626,7 +605,6 @@ the logo disappears in cell size
     }
 }
 
-
 /* SECTION BLOG */
 
 #bodyBlog{
@@ -644,12 +622,7 @@ the logo disappears in cell size
 }
 
 .blog .blog-contentMain .blog-containerTitle .blog-title {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
     font-size: 25px;
-    color: #C1CDEE;
-    letter-spacing: 3px;
-    word-spacing: 8px;
 }
 
 .blog .blog-contentMain > div {
@@ -659,7 +632,6 @@ the logo disappears in cell size
 .blog .blog-contentMain .carousel-inner img {
     width: 100%;
     height: 400px;
-    /* Establece una altura fija para el contenedor de la imagen */
     object-fit: cover;
 }
 
@@ -674,7 +646,6 @@ the logo disappears in cell size
 .blog .blog-contentMain .card img {
     width: 100%;
     height: 200px;
-    /* Establece una altura fija para el contenedor de la imagen */
     border-radius: 3%;
     object-fit: cover;
 }
@@ -728,14 +699,11 @@ the logo disappears in cell size
 }
 
 .blog .blog-contentMain .card .card-body .card-title {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
     text-align: center;
     font-size: 18px;
 }
 
-.blog .blog-contentMain .card .card-body .card-text {
-    font-family: 'Rubik', sans-serif;
+.blog .blog-contentMain .card .card-body p {
     font-size: 16px;
 }
 
@@ -807,16 +775,11 @@ the logo disappears in cell size
     #bodyContact{
         height: 100vh;
     }
-    
 }
 
 .mainContact {
     display: grid;
     align-items: center;
-}
-
-.mainContact .contact {
-    padding-top: 30px;
 }
 
 .contact-contentMain {
@@ -837,12 +800,7 @@ the logo disappears in cell size
 }
 
 .contact-contentMain .container-contact h1 {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
     font-size: 25px;
-    color: #C1CDEE;
-    letter-spacing: 3px;
-    word-spacing: 8px;
 }
 
 @media screen and (min-width:768px) {
@@ -858,12 +816,8 @@ the logo disappears in cell size
 }
 
 .contact-contentMain .container-form .form h5 {
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
     text-align: center;
     font-size: 18px;
-    color: #C1CDEE;
-    margin-bottom: 30px;
 }
 
 @media screen and (min-width:768px) {
@@ -927,7 +881,6 @@ the logo disappears in cell size
     }
 }
 
-
 @media screen and (min-width:992px) {
     .contact-contentMain .container-form .form{
         width: 650px;
@@ -960,26 +913,26 @@ the logo disappears in cell size
     font-size: 16px;
 }
 
-.iconos {
+.contact .contact-contentMain .container-form .icons {
     display: flex;
     justify-content: space-evenly;
     margin: 20px auto;
 }
 
 @media screen and (min-width:576px) {
-    .iconos {
+    .icons {
         margin: 25px auto;
         width: 530px;
     }
 }
 
-.iconos svg {
+.icons svg {
     font-size: 35px;
     color: #f8f8ff;
 }
 
 @media screen and (min-width:768px) {
-    .iconos svg {
+    .icons svg {
         font-size: 40px;
     }
 }
@@ -991,7 +944,8 @@ the logo disappears in cell size
     height: 2.5px;
 }
 
-/*blog section*/
+/* Section Blog */
+
 #bodyBlog{
     height: 100%;
 }
@@ -1054,7 +1008,6 @@ the logo disappears in cell size
         height: 40px;
     }
 }
-
 
 .footer {
     display: flex;
