@@ -920,19 +920,19 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:576px) {
-    .icons {
+    .contact .contact-contentMain .container-form .icons {
         margin: 25px auto;
         width: 530px;
     }
 }
 
-.icons svg {
+.contact .contact-contentMain .container-form .icons svg {
     font-size: 35px;
     color: #f8f8ff;
 }
 
 @media screen and (min-width:768px) {
-    .icons svg {
+    .contact .contact-contentMain .container-form .icons svg {
         font-size: 40px;
     }
 }
