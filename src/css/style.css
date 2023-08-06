@@ -500,6 +500,11 @@ the logo disappears in cell size
     }
 }
 
+.projects .projects-contentMain .projects-containerProyect .card img{
+    height: 175px;
+    width: 100%;
+}
+
 .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
     text-align: center;
     font-size: 18px;
