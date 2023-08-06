@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
+    text-align: justify;
 }
 
 /* Section HEADER */
@@ -429,6 +430,7 @@ the logo disappears in cell size
 
 .projects .projects-contentMain .projects-containerProyect {
     display: grid;
+    justify-content: center;
     row-gap: 10px;
 }
 
@@ -436,6 +438,7 @@ the logo disappears in cell size
 .projects .projects-contentMain .projects-containerProyect .card {
     padding: 10px;
     transition: all 0.2s ease-in;
+    width: 280px;
 }
 
 .projects .projects-contentMain .projects-containerProyect .card:hover {
@@ -447,16 +450,7 @@ the logo disappears in cell size
 /* breakpoints 576px */
 @media screen and (min-width:576px) {
     .projects .projects-contentMain .projects-containerProyect .card {
-        width: 350px;
         margin: 0 auto;
-    }
-}
-
-
-/* breakpoints 768px */
-@media screen and (min-width:768px) {
-    .projects .projects-contentMain .projects-containerProyect .card {
-        width: auto;
     }
 }
 
@@ -555,17 +549,9 @@ the logo disappears in cell size
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .projects .projects-contentMain .projects-containerProyect {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
-    }
-}
-
-/* breakpoints 992px */
-@media screen and (min-width:992px) {
-    /* center the card */
-    .projects-contentMain .projects-containerProyect .card {
-        margin: 0 auto;
     }
 }
 
@@ -574,6 +560,15 @@ the logo disappears in cell size
     /* I shrink the container to be able to center it */
     .projects .projects-contentMain .projects-containerProyect {
         width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    /* center the card */
+    .projects-contentMain .projects-containerProyect .card {
         margin: 0 auto;
     }
 }
