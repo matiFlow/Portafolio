@@ -37,16 +37,22 @@ p {
 
 @media screen and (max-width:767px) {
     .navbar .navbar-collapse .navbar-nav {
-        max-height: 0;
         /* I use this property so that its container measures 0 wide. */
-        overflow: hidden;
+        max-height: 0; 
         /* I use this property so that the content that stands out because it is in a width of 0 is completely hidden and does not overlap the content. */
-        transition: max-height 0.9s;
+        overflow: hidden;
+        visibility: hidden;
         /* when I click on the hamburger, the width expands, so the hidden stops hiding the content, it no longer has to hide anything */
+        transition: max-height 0.9s;
     }
 
     .navbar .navbar-collapse.show .navbar-nav {
         max-height: 300px;
+        visibility: visible;
+    }
+
+    .navbar .navbar-collapse .navbar-brand{
+        display: none;
     }
 }
 
@@ -70,10 +76,9 @@ the logo disappears in cell size
 
 .navbar .container-fluid .collapse .navbar-brand img {
     filter: drop-shadow(2px 4px 6px white);
-    width: 90px;
+    width: 60px;
     height: 70px;
 }
-
 
 /* The logo that is in mobile mode disappears so that the logo that is in desktop mode appears */
 
