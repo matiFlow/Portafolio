@@ -56,7 +56,6 @@ the logo disappears in cell size
 .navbar .container-fluid .collapse .navbar-brand {
     display: none;
 }
-
 .navbar .container-fluid .navbar-toggler {
     box-shadow: none;
     background-color: #67748F;
@@ -490,6 +489,12 @@ the logo disappears in cell size
     }
 }
 
+@media screen and (min-width:992px) {
+    .projects .projects-contentMain .projects-containerProyect .card:nth-child(4) {
+        grid-column: 2;
+    }
+}
+
 .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
     text-align: center;
     font-size: 18px;
@@ -520,7 +525,14 @@ the logo disappears in cell size
 }
 
 .projects .projects-contentMain .projects-containerProyect .card .card-body .icons i::before {
-    font-size: 50px;
+    font-size: 35px;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .projects .projects-contentMain .projects-containerProyect .card .card-body .icons i::before {
+        font-size: 40px;
+    }
 }
 
 
@@ -557,6 +569,16 @@ the logo disappears in cell size
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
+    /* I shrink the container to be able to center it */
+    .projects .projects-contentMain .projects-containerProyect {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* breakpoints 1200px */
+@media screen and (min-width:1400px) {
     /* I shrink the container to be able to center it */
     .projects .projects-contentMain .projects-containerProyect {
         width: 80%;
