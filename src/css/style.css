@@ -442,7 +442,13 @@ the logo disappears in cell size
 .projects .projects-contentMain .projects-containerProyect .card {
     padding: 10px;
     transition: all 0.2s ease-in;
-    width: 280px;
+}
+
+/* breakpoints 576px */
+@media screen and (min-width:576px) {
+    .projects .projects-contentMain .projects-containerProyect .card {
+        width: 280px;
+    }
 }
 
 .projects .projects-contentMain .projects-containerProyect .card:hover {
@@ -503,6 +509,12 @@ the logo disappears in cell size
 .projects .projects-contentMain .projects-containerProyect .card img{
     height: 175px;
     width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .projects .projects-contentMain .projects-containerProyect .card img{
+        object-fit: cover;
+    }
 }
 
 .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
@@ -715,9 +727,7 @@ the logo disappears in cell size
     transform: scale(1.03);
 }
 
-.containerCards .card:nth-child(2) {
-    width: 18em;
-}
+
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
@@ -926,7 +936,7 @@ the logo disappears in cell size
     height: 2.5px;
 }
 
-/* Section Blog */
+/* SECTION BLOG */
 
 #bodyBlog{
     height: 100%;
@@ -955,8 +965,8 @@ the logo disappears in cell size
     }
 }
 
-.main .blogLinks .containerCards .card:nth-child(1) {
-    width: 18rem;
+.main .blogLinks .containerCards .card {
+    width: 270px;
 }
 
 @media screen and (min-width:992px) {
