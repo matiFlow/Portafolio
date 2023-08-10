@@ -319,6 +319,29 @@ the logo disappears in cell size
     }
 }
 
+.aboutMe .aboutMe-profile img{
+    width: 115px;
+    height: 190px;
+    border-radius: 50%;
+    margin: 10px 0px;
+}
+
+@media screen and (min-width:768px) {
+    .aboutMe .aboutMe-profile img {
+        width: 130px;
+        height: 210px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .aboutMe .aboutMe-profile img {
+        width: 150px;
+        height: 220px;
+        border-radius: 50%;
+    }
+}
+
 .aboutMe .aboutMe-contentMain .aboutMe-containerDescription h1 {
     text-align: center;
     font-size: 25px;
