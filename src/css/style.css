@@ -23,6 +23,10 @@ p {
     text-align: justify;
 }
 
+.highlighted {
+    color: #6ddc9f;
+}
+
 /* Section HEADER */
 
 .header {
@@ -41,11 +45,12 @@ p {
         max-height: 0; 
         /* I use this property so that the content that stands out because it is in a width of 0 is completely hidden and does not overlap the content. */
         overflow: hidden;
-        visibility: hidden;
         /* when I click on the hamburger, the width expands, so the hidden stops hiding the content, it no longer has to hide anything */
+        visibility: hidden;
         transition: max-height 0.9s;
     }
-
+    
+    /* Show class is created when the navigation menu is displayed. */
     .navbar .navbar-collapse.show .navbar-nav {
         max-height: 300px;
         visibility: visible;
@@ -223,10 +228,6 @@ the logo disappears in cell size
 
 .home .home-contentMain .home-contentTitle .home-title .title-name {
     color: #C1CDEE;
-}
-
-.home .home-contentMain .home-contentTitle .home-title .title-portafolio {
-    color: #6ddc9f;
 }
 
 /* Social networks */
