@@ -465,40 +465,45 @@ the logo disappears in cell size
     }
 }
 
-/* breakpoints 992px */
-@media screen and (min-width:992px) {
-    /*Animation cards*/
-    .projects .projects-contentMain .projects-containerProyect .card {
-        animation: cambio-color 3s infinite;
-        position: relative;
-        transition: transform 1s;
+/*Animation cards*/
+.projects .projects-contentMain .projects-containerProyect .card {
+    animation: cambio-color 3s infinite;
+    position: relative;
+    transition: transform 1s;
+}
+
+@keyframes cambio-color {
+    0% {
+        border: 5px solid #69bca6;
     }
 
-    @keyframes cambio-color {
-        0% {
-            border: 5px solid #69bca6;
-        }
-
-        25% {
-            border: 5px solid #a8b6d2;
-        }
-
-        50% {
-            border: 5px solid #438f4a;
-        }
-
-        75% {
-            border: 5px solid #8f436e;
-        }
-
-        100% {
-            border: 5px solid #69bca6;
-        }
+    25% {
+        border: 5px solid #a8b6d2;
     }
 
-    .projects .projects-contentMain .projects-containerProyect .card:hover {
-        transform: scale(1.03);
+    50% {
+        border: 5px solid #438f4a;
     }
+
+    75% {
+        border: 5px solid #8f436e;
+    }
+
+    100% {
+        border: 5px solid #69bca6;
+    }
+}
+
+.projects .projects-contentMain .projects-containerProyect .card:hover {
+    transform: scale(1.03);
+}
+
+.projects .projects-contentMain .projects-containerProyect .card:hover button {
+    background-color: #fff;
+}
+
+.projects .projects-contentMain .projects-containerProyect .card:hover button a{
+    color: #061932;
 }
 
 @media screen and (min-width:992px) {
@@ -558,9 +563,14 @@ the logo disappears in cell size
     }
 }
 
+.projects .projects-contentMain .projects-containerProyect .card button{
+    background-color: #061932;
+    border: none;
+}
 
 .projects .projects-contentMain .projects-containerProyect .card button a {
     color: #f7f8fa;
+    font-weight: 600;
     text-decoration: none;
 }
 
