@@ -291,12 +291,24 @@ the logo disappears in cell size
 
 /* Section ABOUT ME */
 
-.aboutMe {
+#bodyAboutMe {
     height: 100%;
+}
+
+.main-aboutMe {
+    display: grid;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .main-aboutMe {
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
 .aboutMe .aboutMe-contentMain {
     display: grid;
+    grid-template-rows: 150px auto;
     height: 100%;
     align-items: center;
     color: white;
@@ -304,18 +316,17 @@ the logo disappears in cell size
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .aboutMe .aboutMe-contentMain {
+    .aboutMe .aboutMe-contentMain .aboutMe-contentDetail {
+        display: grid;
         grid-template-columns: 1fr .5fr;
-        grid-template-rows: 1fr;
-        margin-top: 0;
     }
 }
 
+
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription {
-        display: grid;
-        height: 90%;
+    .aboutMe .aboutMe-contentMain {
+        margin-top: 0;
     }
 }
 
@@ -323,13 +334,14 @@ the logo disappears in cell size
     width: 115px;
     height: 190px;
     border-radius: 50%;
-    margin: 10px 0px;
+    margin: 30px 0px;
 }
 
 @media screen and (min-width:768px) {
     .aboutMe .aboutMe-profile img {
         width: 130px;
         height: 210px;
+        margin: 0;
         border-radius: 50%;
     }
 }
@@ -342,15 +354,14 @@ the logo disappears in cell size
     }
 }
 
-.aboutMe .aboutMe-contentMain .aboutMe-containerDescription h1 {
+.aboutMe .aboutMe-contentMain h1 {
     text-align: center;
     font-size: 25px;
-    margin-bottom: 30px;
 }
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription h1 {
+    .aboutMe .aboutMe-contentMain h1 {
         font-size: 30px;
         margin-bottom: 0;
         align-self: center;
@@ -358,40 +369,32 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:992px) {
-    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription h1 {
+    .aboutMe .aboutMe-contentMain h1 {
         font-size: 40px;
-        margin-bottom: 25px;
     }
 }
 
-.aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial .aboutMe-detail {
-    word-spacing: 5px;
-}
-
-/* breakpoints 768px */
-@media screen and (min-width:768px) {
-    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial {
-        align-self: start;
-    }
-}
-
-/* breakpoints 768px */
 @media screen and (min-width:992px) {
-    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial {
-        align-self: start;
+    .aboutMe .aboutMe-contentMain .aboutMe-contentDetail .aboutMe-containerDescription {
+        /* align-self: center; */
     }
 }
 
-.aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial .aboutMe-detail {
+@media screen and (min-width:1400px) {
+    .aboutMe .aboutMe-contentMain .aboutMe-contentDetail .aboutMe-containerDescription {
+        padding: 0 5%;
+    }
+}
+
+.aboutMe .aboutMe-contentMain .aboutMe-contentDetail .aboutMe-containerDescription .aboutMe-detail {
+    word-spacing: 5px;
     margin: 10px;
-    margin-bottom: 0;
 }
 
 /* breakpoints 1400px */
-@media screen and (min-width:1400px) {
-    .aboutMe .aboutMe-contentMain .aboutMe-containerDescription .aboutMe-contentDetial {
-        text-align: initial;
-        padding: 30px;
+@media (min-width: 576px) and (min-width: 1400px) {
+    .aboutMe .aboutMe-contentMain .aboutMe-contentDetail .aboutMe-containerDescription .aboutMe-detail {
+        font-size: 20px;
     }
 }
 
@@ -404,7 +407,7 @@ the logo disappears in cell size
     .aboutMe .aboutMe-contentMain .aboutMe-profile {
         align-self: start;
     }
-  }
+}
 
 .aboutMe .aboutMe-contentMain .aboutMe-profile svg {
     height: 150px;
@@ -415,6 +418,65 @@ the logo disappears in cell size
     .aboutMe .aboutMe-contentMain .aboutMe-profile svg {
         height: 200px;
     }
+}
+
+.skills .skills-contentMain {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px auto;
+    text-align: center;
+}
+
+.skills .skills-contentMain h2 {
+    align-self: center;
+}
+
+.skills .skills-contentMain .skills-container {
+    display: grid;
+    grid-template-rows: 250px 250px;
+}
+
+/* breakpoints 768px */
+@media screen and (min-width:768px) {
+    .skills .skills-contentMain .skills-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.skills .skills-contentMain .skills-container .skills-technical{
+    display: grid;
+}
+
+.skills .skills-contentMain .skills-container .skills-technical h3{
+    align-self: center;
+}
+
+.skills .skills-contentMain .skills-container .skills-technical .technical-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills .skills-contentMain .skills-container .skills-technical .technical-icons img{
+    margin: 0 auto;
+}
+
+.skills .skills-contentMain .skills-container .skills-soft{
+    display: grid;
+}
+
+.skills .skills-contentMain .skills-container .skills-soft h3{
+    align-self: center;
+}
+
+
+.skills .skills-contentMain .skills-container .skills-soft .soft-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills .skills-contentMain .skills-container .skills-soft .soft-icons img{
+    margin: 0 auto;
 }
 
 /* SECTION PROJECTS */
