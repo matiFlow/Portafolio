@@ -374,12 +374,6 @@ the logo disappears in cell size
     }
 }
 
-@media screen and (min-width:992px) {
-    .aboutMe .aboutMe-contentMain .aboutMe-contentDetail .aboutMe-containerDescription {
-        /* align-self: center; */
-    }
-}
-
 @media screen and (min-width:1400px) {
     .aboutMe .aboutMe-contentMain .aboutMe-contentDetail .aboutMe-containerDescription {
         padding: 0 5%;
@@ -433,14 +427,14 @@ the logo disappears in cell size
 
 .skills .skills-contentMain .skills-container {
     display: grid;
-    grid-template-rows: 250px 250px;
+    grid-template-rows: 300px 300px;
 }
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
     .skills .skills-contentMain .skills-container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 340px;
     }
 }
 
@@ -459,6 +453,7 @@ the logo disappears in cell size
 
 .skills .skills-contentMain .skills-container .skills-technical .technical-icons img{
     margin: 0 auto;
+    width: 70px;
 }
 
 .skills .skills-contentMain .skills-container .skills-soft{
@@ -477,6 +472,7 @@ the logo disappears in cell size
 
 .skills .skills-contentMain .skills-container .skills-soft .soft-icons img{
     margin: 0 auto;
+    width: 70px;
 }
 
 /* SECTION PROJECTS */
