@@ -28,7 +28,7 @@
     <title>Portafolio - Sobre mi</title>
 </head>
 
-<body>
+<body id="bodyAboutMe">
     <div class="container-fluid">
         <!-- HEADER -->
         <header class="header">
@@ -73,20 +73,67 @@
         <!--part line-->
         <div class="separador"></div>
         <!-- Content main -->
-        <main class="main">
+        <main class="main-aboutMe">
             <!-- ABOUT ME -->
             <section class="aboutMe">
                 <div class="aboutMe-contentMain">
-                    <div class="aboutMe-containerDescription">
-                        <h1>Sobre <span class="highlighted">mí</span></h1>
-                        <div class="aboutMe-contentDetial">
+                    <h1>Sobre <span class="highlighted">mí</span></h1>
+                    <div class="aboutMe-contentDetail">
+                        <div class="aboutMe-containerDescription">
                             <p class="aboutMe-detail">
-                                ¡Hola! Soy programador, fiel cafetero... Nunca me quedo quieto, y menos cuando hay excelentes oportunidades para aprovecharlas. Actualmente desarrollo backend y bases de datos. Conozco y programo en los lenguajes de programación más conocidos: Java, C#, Python, JavaScript, Delphi y Haskell. Además, uso constantemente en proyectos HTML, CSS, Bootstrap, Angular y .NET. Mis estudios formales me abren grandes puertas, pero también ser autodidacta y la experiencia laboral me llevan a avanzar mucho más rápido. Espero haberles aclarado algunas dudas sobre mí.
+                                ¡Hola! Soy programador, fiel cafetero... Nunca me quedo quieto, y menos cuando hay
+                                excelentes oportunidades para aprovecharlas. Actualmente desarrollo backend y bases de
+                                datos. Conozco y programo en los lenguajes de programación más conocidos: Java, C#, Python,
+                                JavaScript, Delphi y Haskell. Además, uso constantemente en proyectos HTML, CSS, Bootstrap,
+                                Angular y .NET. Mis estudios formales me abren grandes puertas, pero también ser autodidacta
+                                y la experiencia laboral me llevan a avanzar mucho más rápido. Espero haberles aclarado
+                                algunas dudas sobre mí.
                             </p>
                         </div>
+                        <div class="aboutMe-profile">
+                            <img src="../img/about-me/perfil.jpeg" alt="Miqueas Drovetta">
+                        </div>
                     </div>
-                    <div class="aboutMe-profile">
-                        <img src="../img/about-me/perfil.jpeg" alt="">
+                </div>
+            </section>
+            <section class="skills">
+                <div class="skills-contentMain">
+                    <h2>Habilidades</h2>
+                    <div class="skills-container">
+                        <div class="skills-technical visible" id="skills-technical">
+                            <h3>Tecnicas</h3>
+                            <!--button-->
+                            <div id="technical-button">
+                                <button class="btn btn-primary button_next" id="next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z"/></svg>
+                                </button>
+                            </div>
+                            <div class="technical-icons">
+                                <img src="../img/about-me/icon-python.svg" alt="">
+                                <img src="../img/about-me/icon-javascript.svg" alt="">
+                                <img src="../img/about-me/icon-c.svg" alt="">
+                                <img src="../img/about-me/icon-html5.svg" alt="">
+                                <img src="../img/about-me/icon-css3.svg" alt="">
+                                <img src="../img/about-me/icon-bootstrap.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="skills-soft oculto" id="skills-soft">
+                            <h3>Blandas</h3>
+                            <!--button-->
+                            <div id="soft-button">
+                                <button class="btn btn-primary button_previous" id="previous">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z"/></svg>
+                            </button>
+                            </div>
+                            <div class="soft-icons">
+                                <img src="../img/about-me/icon-css3.svg" alt="">
+                                <img src="../img/about-me/icon-javascript.svg" alt="">
+                                <img src="../img/about-me/icon-c.svg" alt="">
+                                <img src="../img/about-me/icon-bootstrap.svg" alt="">
+                                <img src="../img/about-me/icon-python.svg" alt="">
+                                <img src="../img/about-me/icon-html5.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -104,6 +151,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+    <!--script-->
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
