@@ -152,6 +152,13 @@ the logo disappears in cell size
         justify-content: space-between;
     }
 }
+/* SECTION INDEX */
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle{
+    display: flex;
+    text-align: center;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain 
 
 /* SECTION MAIN > HOME */
 

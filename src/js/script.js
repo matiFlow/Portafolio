@@ -17,3 +17,6 @@ boton_b.addEventListener('click', () => {
     contenedor_technical.classList.remove('oculto');
     contenedor_technical.classList.add('visible');
 });
+
+//---------------------------------------------------------------------------------
+
