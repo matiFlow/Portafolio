@@ -153,6 +153,19 @@ the logo disappears in cell size
     }
 }
 /* SECTION INDEX */
+.portfolio-containerPortfolio .card .card-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.portfolio-containerPortfolio .card .card-body .imgProfile {
+
+}
+
+
+
+/* SECTION MAIN */
 .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle{
     display: flex;
     text-align: center;

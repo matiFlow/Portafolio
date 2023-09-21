@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap" rel="stylesheet">
     <link href="" rel="stylesheet">
     <!-- Title  -->
-    <title>Portafolio - Inicio</title>
+    <title>Contenedor Portafolios</title>
 </head>
 
 <body>
@@ -40,7 +40,15 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- logo mode mobile -->
+                    <a href="./home.html" class="logo-mobile">
+                        <img src="./src/img/logo.svg" alt="Logo">
+                    </a>
                     <div class="collapse navbar-collapse" id="navbar-toggler">
+                        <!-- Logo mode desktop-->
+                        <a class="navbar-brand" href="./home.html">
+                            <img src="./src/img/logo.svg" alt="Logo">
+                        </a>
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Ayuda</a>
@@ -70,18 +78,16 @@
                         <div class="card">
                             <div class="card-body">
                             
-                                <div class="contenedor">
+                                <div class="imgProfile">
                                     <!--card image-->
-                                    <img src="../img/project-img/img-test-project-4.webp" class="card-img-top" alt="imagen de computadora">
+                                    <img src="./src/img/logo.svg" class="card-img-top" alt="imagen de computadora">
                                     <!--card button-->
                                     <button type="button" class="btn btn-primary"><a href="">Enlace</a></button>
                                 </div>
                                 
                                 <!--card icons-->
-                                <div class="perfil">
-                                    <p class="card-text">This is a longer card with supporting text below as a natural
-                                        lead-in
-                                        to additional content. This content is a little bit longer.
+                                <div class="descriptionProfile">
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                                     </p>
                                     <!--tecnologies icons-->
                                     <i class="fa-brands fa-html5 fa-lg"></i>
