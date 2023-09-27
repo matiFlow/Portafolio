@@ -9,7 +9,12 @@ body {
     height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
     color: #C1CDEE;
@@ -42,21 +47,21 @@ p {
 @media screen and (max-width:767px) {
     .navbar .navbar-collapse .navbar-nav {
         /* I use this property so that its container measures 0 wide. */
-        max-height: 0; 
+        max-height: 0;
         /* I use this property so that the content that stands out because it is in a width of 0 is completely hidden and does not overlap the content. */
         overflow: hidden;
         /* when I click on the hamburger, the width expands, so the hidden stops hiding the content, it no longer has to hide anything */
         visibility: hidden;
         transition: max-height 0.9s;
     }
-    
+
     /* Show class is created when the navigation menu is displayed. */
     .navbar .navbar-collapse.show .navbar-nav {
         max-height: 300px;
         visibility: visible;
     }
 
-    .navbar .navbar-collapse .navbar-brand{
+    .navbar .navbar-collapse .navbar-brand {
         display: none;
     }
 }
@@ -67,6 +72,7 @@ the logo disappears in cell size
 .navbar .container-fluid .collapse .navbar-brand {
     display: none;
 }
+
 .navbar .container-fluid .navbar-toggler {
     box-shadow: none;
     background-color: #67748F;
@@ -154,14 +160,27 @@ the logo disappears in cell size
 }
 
 /* SECTION INDEX > PORTFOLIO */
-.container-fluid .container-user{
+.container-fluid .container-user-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5px 0px 0px 0px;
 }
 
-.container-fluid .container-user .logo-user{
+@media screen and (min-width:767px) {
+    .container-fluid .container-user-mobile {
+        display: none;
+    }
+}
+
+.container-fluid .container-user-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+}
+
+.container-fluid .container-user-mobile .logo-user {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,18 +192,50 @@ the logo disappears in cell size
     color: #67748F;
 }
 
-.container-fluid .container-user .text-login{
+@media screen and (min-width:425px){
+    .container-fluid .container-user-mobile .logo-user{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.container-fluid .container-user-desktop .logo-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: solid 2px;
+    border-radius: 50px;
+    border-color: #67748F;
+    color: #67748F;
+}
+
+
+.container-fluid .container-user-mobile .text-login {
     font-size: 10px;
     color: #67748F;
     margin: 0px;
 }
 
-.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle{
+@media screen and (min-width:425px){
+    .container-fluid .container-user-mobile .text-login{
+        font-size: 12px;
+    }
+}
+
+.container-fluid .container-user-desktop .text-login {
+    font-size: 15px;
+    color: #67748F;
+    margin: 0px;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle {
     display: flex;
     text-align: center;
 }
 
-.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle .portfolio-title{
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle .portfolio-title {
     margin: 10px 0px 20px 0px;
 }
 
@@ -203,7 +254,7 @@ the logo disappears in cell size
     .main {
         align-self: center;
     }
-    
+
 }
 
 .home .home-contentMain {
@@ -365,7 +416,7 @@ the logo disappears in cell size
     }
 }
 
-.aboutMe .aboutMe-profile img{
+.aboutMe .aboutMe-profile img {
     width: 115px;
     height: 190px;
     border-radius: 50%;
@@ -475,7 +526,7 @@ the logo disappears in cell size
     }
 }
 
-.skills .skills-contentMain .skills-container .skills-technical{
+.skills .skills-contentMain .skills-container .skills-technical {
     display: grid;
     height: 100%;
     width: 100%;
@@ -484,16 +535,16 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:768px) {
-    .skills .skills-contentMain .skills-container .skills-technical{
+    .skills .skills-contentMain .skills-container .skills-technical {
         position: relative;
     }
 }
 
-.skills .skills-contentMain .skills-container .skills-technical h3{
+.skills .skills-contentMain .skills-container .skills-technical h3 {
     align-self: center;
 }
 
-.skills .skills-contentMain .skills-container .skills-technical #technical-button{
+.skills .skills-contentMain .skills-container .skills-technical #technical-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -504,20 +555,22 @@ the logo disappears in cell size
     visibility: visible;
     opacity: 1;
 }
+
 .oculto {
     visibility: hidden;
     opacity: 0;
 }
 
 @media screen and (min-width:768px) {
-    .oculto{
+    .oculto {
         visibility: visible;
         opacity: 1;
     }
 }
+
 /*-------------------------*/
 
-.skills .skills-contentMain .skills-container .skills-technical #technical-button button{
+.skills .skills-contentMain .skills-container .skills-technical #technical-button button {
     width: 54px;
     border-color: black;
     background-color: transparent;
@@ -525,22 +578,22 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:768px) {
-    .skills .skills-contentMain .skills-container .skills-technical #technical-button{
+    .skills .skills-contentMain .skills-container .skills-technical #technical-button {
         display: none;
     }
 }
 
-.skills .skills-contentMain .skills-container .skills-technical .technical-icons{
+.skills .skills-contentMain .skills-container .skills-technical .technical-icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.skills .skills-contentMain .skills-container .skills-technical .technical-icons img{
+.skills .skills-contentMain .skills-container .skills-technical .technical-icons img {
     margin: 0 auto;
     width: 70px;
 }
 
-.skills .skills-contentMain .skills-container .skills-soft{
+.skills .skills-contentMain .skills-container .skills-soft {
     display: grid;
     height: 100%;
     width: 100%;
@@ -549,40 +602,40 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:768px) {
-    .skills .skills-contentMain .skills-container .skills-soft{
+    .skills .skills-contentMain .skills-container .skills-soft {
         position: relative;
     }
 }
 
-.skills .skills-contentMain .skills-container .skills-soft h3{
+.skills .skills-contentMain .skills-container .skills-soft h3 {
     align-self: center;
 }
 
-.skills .skills-contentMain .skills-container .skills-soft #soft-button{
+.skills .skills-contentMain .skills-container .skills-soft #soft-button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 @media screen and (min-width:768px) {
-    .skills .skills-contentMain .skills-container .skills-soft #soft-button{
+    .skills .skills-contentMain .skills-container .skills-soft #soft-button {
         display: none;
     }
 }
 
-.skills .skills-contentMain .skills-container .skills-soft #soft-button button{
+.skills .skills-contentMain .skills-container .skills-soft #soft-button button {
     width: 54px;
     border-color: black;
     background-color: transparent;
     border-radius: 100%;
 }
 
-.skills .skills-contentMain .skills-container .skills-soft .soft-icons{
+.skills .skills-contentMain .skills-container .skills-soft .soft-icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.skills .skills-contentMain .skills-container .skills-soft .soft-icons img{
+.skills .skills-contentMain .skills-container .skills-soft .soft-icons img {
     margin: 0 auto;
     width: 70px;
 }
@@ -695,7 +748,7 @@ the logo disappears in cell size
     background-color: #fff;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card:hover button a{
+.projects .projects-contentMain .projects-containerProyect .card:hover button a {
     color: #061932;
 }
 
@@ -705,13 +758,13 @@ the logo disappears in cell size
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card img{
+.projects .projects-contentMain .projects-containerProyect .card img {
     height: 175px;
     width: 100%;
 }
 
 @media screen and (max-width:576px) {
-    .projects .projects-contentMain .projects-containerProyect .card img{
+    .projects .projects-contentMain .projects-containerProyect .card img {
         object-fit: cover;
     }
 }
@@ -756,7 +809,7 @@ the logo disappears in cell size
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card button{
+.projects .projects-contentMain .projects-containerProyect .card button {
     background-color: #061932;
     border: none;
 }
@@ -795,6 +848,7 @@ the logo disappears in cell size
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
+
     /* I shrink the container to be able to center it */
     .projects .projects-contentMain .projects-containerProyect {
         width: 80%;
@@ -805,6 +859,7 @@ the logo disappears in cell size
 
 /* breakpoints 1200px */
 @media screen and (min-width:1400px) {
+
     /* I shrink the container to be able to center it */
     .projects .projects-contentMain .projects-containerProyect {
         width: 80%;
@@ -815,6 +870,7 @@ the logo disappears in cell size
 
 /* breakpoints 992px */
 @media screen and (min-width:992px) {
+
     /* center the card */
     .projects-contentMain .projects-containerProyect .card {
         margin: 0 auto;
@@ -823,7 +879,7 @@ the logo disappears in cell size
 
 /* SECTION BLOG */
 
-#bodyBlog{
+#bodyBlog {
     height: 100%;
 }
 
@@ -841,7 +897,7 @@ the logo disappears in cell size
     font-size: 25px;
 }
 
-.blog .blog-contentMain > div {
+.blog .blog-contentMain>div {
     padding: 30px;
 }
 
@@ -851,11 +907,11 @@ the logo disappears in cell size
     object-fit: cover;
 }
 
-.blog .blog-contentMain .row{
+.blog .blog-contentMain .row {
     row-gap: 10px;
 }
 
-.blog .blog-contentMain .row .col .card{
+.blog .blog-contentMain .row .col .card {
     padding: 10px;
 }
 
@@ -963,12 +1019,12 @@ the logo disappears in cell size
 
 /* SECTION CONTACT */
 
-#bodyContact{
+#bodyContact {
     height: 100%;
 }
 
 @media screen and (min-height:950px) {
-    #bodyContact{
+    #bodyContact {
         height: 100vh;
     }
 }
@@ -1000,13 +1056,13 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:768px) {
-    .contact-contentMain .container-contact h1{
+    .contact-contentMain .container-contact h1 {
         font-size: 30px;
     }
 }
 
 @media screen and (min-width:1200px) {
-    .contact-contentMain .container-contact h1{
+    .contact-contentMain .container-contact h1 {
         font-size: 40px;
     }
 }
@@ -1017,13 +1073,13 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:768px) {
-    .contact-contentMain .container-form .form h5{
+    .contact-contentMain .container-form .form h5 {
         font-size: 22px;
     }
 }
 
 @media screen and (min-width:1200px) {
-    .contact-contentMain .container-form .form h5{
+    .contact-contentMain .container-form .form h5 {
         font-size: 25px;
     }
 }
@@ -1032,7 +1088,7 @@ the logo disappears in cell size
     padding: 0 10px;
 }
 
-.contact-contentMain .container-form .form{
+.contact-contentMain .container-form .form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -1056,7 +1112,7 @@ the logo disappears in cell size
     }
 }
 
-.contact-contentMain .container-form .form div .form-control{
+.contact-contentMain .container-form .form div .form-control {
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -1069,16 +1125,16 @@ the logo disappears in cell size
 
 .contact-contentMain .container-form .form div .form-control:focus {
     outline-color: #3c50eb;
-}  
+}
 
 @media screen and (min-width:576px) {
-    .contact-contentMain .container-form .form{
+    .contact-contentMain .container-form .form {
         width: 530px;
     }
 }
 
 @media screen and (min-width:992px) {
-    .contact-contentMain .container-form .form{
+    .contact-contentMain .container-form .form {
         width: 650px;
     }
 }
@@ -1089,7 +1145,7 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:992px) {
-    .contact-contentMain .container-form .form .btn{
+    .contact-contentMain .container-form .form .btn {
         width: 50%;
         margin: 15px auto 5px;
     }
@@ -1142,7 +1198,7 @@ the logo disappears in cell size
 
 /* SECTION BLOG */
 
-#bodyBlog{
+#bodyBlog {
     height: 100%;
 }
 
@@ -1150,7 +1206,7 @@ the logo disappears in cell size
     text-align: center;
 }
 
-.main .blogLinks{
+.main .blogLinks {
     min-height: auto;
 }
 
@@ -1162,8 +1218,8 @@ the logo disappears in cell size
     margin-bottom: 10px;
 }
 
-@media screen and (min-width:768px){
-    .main .blogLinks .containerCards{
+@media screen and (min-width:768px) {
+    .main .blogLinks .containerCards {
         justify-content: space-around;
         flex-direction: row;
     }
@@ -1199,7 +1255,7 @@ the logo disappears in cell size
 }
 
 @media screen and (min-width:992px) {
-    .main .blogLinks .blogButton .btn{
+    .main .blogLinks .blogButton .btn {
         width: 200px;
         height: 40px;
     }
