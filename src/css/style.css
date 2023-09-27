@@ -176,7 +176,7 @@ the logo disappears in cell size
         display: none;
     }
 
-    .container-fluid .container-user-desktop {
+    .container-fluid .navbar-collapse .container-user-desktop {
         display: flex;
         flex-direction: column;
         align-items: center;
