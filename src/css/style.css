@@ -154,6 +154,31 @@ the logo disappears in cell size
 }
 
 /* SECTION INDEX > PORTFOLIO */
+.container-fluid .container-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+}
+
+.container-fluid .container-user .logo-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: solid 2px;
+    border-radius: 50px;
+    border-color: #67748F;
+    color: #67748F;
+}
+
+.container-fluid .container-user .text-login{
+    font-size: 10px;
+    color: #67748F;
+    margin: 0px;
+}
+
 .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle{
     display: flex;
     text-align: center;
