@@ -238,11 +238,36 @@ the logo disappears in cell size
 .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle {
     display: flex;
     text-align: center;
+    margin-top: 15px;
 }
 
-.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle .portfolio-title {
-    margin: 10px 0px 20px 0px;
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-description {
+    border: solid;
+    border-color: #585757;
+    color: #C1CDEE;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px;   
 }
+
+.mainPortfolio .portfolio .portfolio-contentMain .buscador{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.mainPortfolio .portfolio .portfolio-contentMain .buscador i{
+    color:#67748F;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain .buscador input{
+    width: 80%;
+    border: solid 2px;
+    border-radius: 10px;
+    background: transparent;
+    border-color: #67748F;
+}
+
 
 /* SECTION MAIN > HOME */
 
