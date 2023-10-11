@@ -1,7 +1,9 @@
-const boton_a = document.getElementById("next")
+
+/*const boton_a = document.getElementById("next")
 const boton_b = document.getElementById("previous")
 
 const contenedor_technical = document.getElementById("skills-technical")
+console.log(contenedor_technical)
 const contenedor_soft = document.getElementById("skills-soft")
 
 boton_a.addEventListener('click', () => {
@@ -17,6 +19,4 @@ boton_b.addEventListener('click', () => {
     contenedor_technical.classList.remove('oculto');
     contenedor_technical.classList.add('visible');
 });
-
-//---------------------------------------------------------------------------------
-
+*/

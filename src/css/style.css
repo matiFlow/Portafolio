@@ -709,26 +709,26 @@ the logo disappears in cell size
 }
 
 
-.projects .projects-contentMain .projects-containerProyect {
+.projects .projects-contentMain .projects-containerProjects {
     display: grid;
     justify-content: center;
     row-gap: 10px;
 }
 
 
-.projects .projects-contentMain .projects-containerProyect .card {
+.projects .projects-contentMain .projects-containerProjects .card {
     padding: 10px;
     transition: all 0.2s ease-in;
 }
 
 /* breakpoints 576px */
 @media screen and (min-width:576px) {
-    .projects .projects-contentMain .projects-containerProyect .card {
+    .projects .projects-contentMain .projects-containerProjects .card {
         width: 280px;
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card:hover {
+.projects .projects-contentMain .projects-containerProjects .card:hover {
     background-color: #061932;
     color: #fff;
 }
@@ -736,13 +736,13 @@ the logo disappears in cell size
 
 /* breakpoints 576px */
 @media screen and (min-width:576px) {
-    .projects .projects-contentMain .projects-containerProyect .card {
+    .projects .projects-contentMain .projects-containerProjects .card {
         margin: 0 auto;
     }
 }
 
 /*Animation cards*/
-.projects .projects-contentMain .projects-containerProyect .card {
+.projects .projects-contentMain .projects-containerProjects .card {
     animation: cambio-color 3s infinite;
     position: relative;
     transition: transform 1s;
@@ -770,97 +770,97 @@ the logo disappears in cell size
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card:hover {
+.projects .projects-contentMain .projects-containerProjects .card:hover {
     transform: scale(1.03);
 }
 
-.projects .projects-contentMain .projects-containerProyect .card:hover button {
+.projects .projects-contentMain .projects-containerProjects .card:hover button {
     background-color: #fff;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card:hover button a {
+.projects .projects-contentMain .projects-containerProjects .card:hover button a{
     color: #061932;
 }
 
 @media screen and (min-width:992px) {
-    .projects .projects-contentMain .projects-containerProyect .card:nth-child(4) {
+    .projects .projects-contentMain .projects-containerProjects .card:nth-child(4) {
         grid-column: 2;
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card img {
+.projects .projects-contentMain .projects-containerProjects .card img{
     height: 175px;
     width: 100%;
 }
 
 @media screen and (max-width:576px) {
-    .projects .projects-contentMain .projects-containerProyect .card img {
+    .projects .projects-contentMain .projects-containerProjects .card img{
         object-fit: cover;
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
+.projects .projects-contentMain .projects-containerProjects .card .card-body .card-title {
     text-align: center;
     font-size: 18px;
 }
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
+    .projects .projects-contentMain .projects-containerProjects .card .card-body .card-title {
         font-size: 22px;
     }
 }
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
-    .projects .projects-contentMain .projects-containerProyect .card .card-body .card-title {
+    .projects .projects-contentMain .projects-containerProjects .card .card-body .card-title {
         font-size: 26px;
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .icons {
+.projects .projects-contentMain .projects-containerProjects .card .card-body .icons {
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .icons i {
+.projects .projects-contentMain .projects-containerProjects .card .card-body .icons i {
     line-height: normal;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .icons i::before {
+.projects .projects-contentMain .projects-containerProjects .card .card-body .icons i::before {
     font-size: 35px;
 }
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .projects .projects-contentMain .projects-containerProyect .card .card-body .icons i::before {
+    .projects .projects-contentMain .projects-containerProjects .card .card-body .icons i::before {
         font-size: 40px;
     }
 }
 
-.projects .projects-contentMain .projects-containerProyect .card button {
+.projects .projects-contentMain .projects-containerProjects .card button{
     background-color: #061932;
     border: none;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card button a {
+.projects .projects-contentMain .projects-containerProjects .card button a {
     color: #f7f8fa;
     font-weight: 600;
     text-decoration: none;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body {
+.projects .projects-contentMain .projects-containerProjects .card .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .card-text {
+.projects .projects-contentMain .projects-containerProjects .card .card-body .card-text {
     margin: 0;
 }
 
-.projects .projects-contentMain .projects-containerProyect .card .card-body .card-button {
+.projects .projects-contentMain .projects-containerProjects .card .card-body .card-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -869,7 +869,7 @@ the logo disappears in cell size
 
 /* breakpoints 768px */
 @media screen and (min-width:768px) {
-    .projects .projects-contentMain .projects-containerProyect {
+    .projects .projects-contentMain .projects-containerProjects {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
@@ -878,9 +878,8 @@ the logo disappears in cell size
 
 /* breakpoints 1200px */
 @media screen and (min-width:1200px) {
-
     /* I shrink the container to be able to center it */
-    .projects .projects-contentMain .projects-containerProyect {
+    .projects .projects-contentMain .projects-containerProjects {
         width: 80%;
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
@@ -889,9 +888,8 @@ the logo disappears in cell size
 
 /* breakpoints 1200px */
 @media screen and (min-width:1400px) {
-
     /* I shrink the container to be able to center it */
-    .projects .projects-contentMain .projects-containerProyect {
+    .projects .projects-contentMain .projects-containerProjects {
         width: 80%;
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
