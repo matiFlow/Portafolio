@@ -267,8 +267,47 @@ the logo disappears in cell size
     background: transparent;
     border-color: #67748F;
 }
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio h5{
+    text-align: center;
+    font-size: 18px;
+}
 
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .row{
+    height: 250px;
+}
 
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .col-6{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .col-6 img{
+    width: 100%;
+    height: 100%;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .card-body .card-text{
+    align-items: initial;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .card-body .moreBtn{
+    width: 100%;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .card-body .moreBtn button{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    background-color: #061932;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .card-body .moreBtn button a{
+    color: #a8b6d2;
+    font-size: 10px;
+    text-decoration: none;
+}
 /* SECTION MAIN > HOME */
 
 .main {
@@ -780,12 +819,6 @@ the logo disappears in cell size
 
 .projects .projects-contentMain .projects-containerProjects .card:hover button a{
     color: #061932;
-}
-
-@media screen and (min-width:992px) {
-    .projects .projects-contentMain .projects-containerProjects .card:nth-child(4) {
-        grid-column: 2;
-    }
 }
 
 .projects .projects-contentMain .projects-containerProjects .card img{
