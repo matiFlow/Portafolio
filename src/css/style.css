@@ -237,8 +237,26 @@ the logo disappears in cell size
 
 .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle {
     display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 15px;
+}
+
+.mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle .portfolio-title{
+    font-size: 25px;
+}
+
+@media screen and (min-width:768px) {
+    .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle .portfolio-title{
+        font-size: 30px;
+    }
+}
+
+/* breakpoints 992px */
+@media screen and (min-width:992px) {
+    .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerTitle .portfolio-title{
+        font-size: 40px;
+    }
 }
 
 .mainPortfolio .portfolio .portfolio-contentMain .portfolio-description {
@@ -256,8 +274,40 @@ the logo disappears in cell size
     align-items: center;
     margin-bottom: 10px;
 }
+
+@media screen and (min-width:768px) {
+    .mainPortfolio .portfolio .portfolio-contentMain .buscador{
+        display: none;
+    }
+
+    .navbar .container-fluid .collapse .buscador-nav{
+        width: 50%;
+        height: 35px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
 .mainPortfolio .portfolio .portfolio-contentMain .buscador i{
     color:#67748F;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .navbar .container-fluid .collapse .buscador-nav i{
+        font-size: 25px;
+        color:#67748F;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .mainPortfolio .portfolio .portfolio-contentMain .buscador input{
@@ -267,6 +317,19 @@ the logo disappears in cell size
     background: transparent;
     border-color: #67748F;
 }
+
+@media screen and (min-width:768px) {
+    .navbar .container-fluid .collapse .buscador-nav input{
+        height: 100%;
+        width: 300px;
+        border: solid 2px;
+        border-radius: 10px;
+        background: transparent;
+        border-color: #67748F;
+        margin-left: 12px;
+    }
+}
+
 .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio h5{
     text-align: center;
     font-size: 18px;
@@ -288,7 +351,8 @@ the logo disappears in cell size
 }
 
 .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .card-body .card-text{
-    align-items: initial;
+    text-align: initial;
+    margin: 0;
 }
 
 .mainPortfolio .portfolio .portfolio-contentMain .portfolio-containerPortfolio .card .card-body .moreBtn{
