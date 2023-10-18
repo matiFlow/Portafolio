@@ -1,9 +1,8 @@
 //Get object literal "about us"
-const aboutUs = getAboutUs();
-showAboutUs(aboutUs);
+// const aboutUs = getAboutUs();
+// showAboutUs(aboutUs);
 
-//getAboutUs(showAboutUs)
-
+getAboutUs(showAboutUs);
 
 function showAboutUs(aboutUs) {
     const aboutMeContentMain= document.getElementById('aboutMe-contentMain');
@@ -20,7 +19,7 @@ function getTemplate(aboutMe) {
     divAboutMeContentDetail.innerHTML = `
                                         <div class="aboutMe-containerDescription">
                                             <p class="aboutMe-detail">
-                                                ${aboutMe.description}
+                                                ${aboutMe.aboutMe}
                                             </p>
                                         </div>
                                         <div class="aboutMe-profile">
@@ -32,8 +31,10 @@ function getTemplate(aboutMe) {
 };
 
 //Get object literal "skills"
-const skills = getSkills();
-showSkills(skills);
+// const skills = getSkills();
+// showSkills(skills);
+
+getSkills(showSkills);
 
 function showSkills(skills) {
     const skillsContentMain = document.getElementById('skills-contentMain');
@@ -57,12 +58,24 @@ function getTemplateSkills(skill) {
                                             </button>
                                         </div>
                                         <div class="technical-icons">
-                                            <img src="${skill.technicalSkill_1}" alt="">
-                                            <img src="${skill.technicalSkill_2}" alt="">
-                                            <img src="${skill.technicalSkill_3}" alt="">
-                                            <img src="${skill.technicalSkill_4}" alt="">
-                                            <img src="${skill.technicalSkill_5}" alt="">
-                                            <img src="${skill.technicalSkill_6}" alt="">
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.technicalSkill_1}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.technicalSkill_2}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.technicalSkill_3}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.technicalSkill_4}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.technicalSkill_5}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.technicalSkill_6}
+                                            </p>                                           
                                         </div>
                                     </div>
                                     <div class="skills-soft oculto" id="skills-soft">
@@ -74,12 +87,24 @@ function getTemplateSkills(skill) {
                                             </button>
                                         </div>
                                         <div class="soft-icons">
-                                            <img src="${skill.softSkill_1}" alt="">
-                                            <img src="${skill.softSkill_2}" alt="">
-                                            <img src="${skill.softSkill_3}" alt="">
-                                            <img src="${skill.softSkill_4}" alt="">
-                                            <img src="${skill.softSkill_5}" alt="">
-                                            <img src="${skill.softSkill_6}" alt="">
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.softSkill_1}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.softSkill_2}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.softSkill_3}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.softSkill_4}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.softSkill_5}
+                                            </p>
+                                            <p style=" color: white; text-align: center;">
+                                                ${skill.softSkill_6}
+                                            </p>
                                         </div>
                                     </div>
                                 `;
@@ -88,8 +113,11 @@ function getTemplateSkills(skill) {
 
 
 
+
+
 /*Button next and previus */
-const boton_a = document.getElementById("next")
+const boton_a = document.getElementById("next");
+console.log(boton_a);
 const boton_b = document.getElementById("previous")
 
 const contenedor_technical = document.getElementById("skills-technical")
