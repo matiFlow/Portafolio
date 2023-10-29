@@ -160,6 +160,17 @@ the logo disappears in cell size
 }
 
 /* SECTION INDEX > PORTFOLIO */
+
+#bodyIndex {
+    height: 100vh;
+}
+
+@media screen and (max-width:420px) {
+    #bodyIndex {
+        height: 100%;
+    }
+}
+
 .container-fluid .container-user-mobile {
     display: flex;
     flex-direction: column;
@@ -230,11 +241,14 @@ the logo disappears in cell size
     margin: 0px;
 }
 
+.mainPortfolio .welcomePortfolio {
+    margin: 20px 0;
+}
+
 .mainPortfolio .welcomePortfolio .portfolio-containerTitle {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 15px;
 }
 
 .mainPortfolio .welcomePortfolio .portfolio-containerTitle .portfolio-title{
