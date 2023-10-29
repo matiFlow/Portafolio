@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="keywords" content="Portafolio, Desarrollador Web, Carrera Profesional">
     <meta name="author" content="Kevin Acarapi, Matías Alexís Amado, Miqueas Drovetta">
-    <meta name="description"
-        content="Bienvenido a mi portafolio web, donde podras conocerme y ver mis proyectos, además si te interesa trabajar conmigo podras contactarme por medio de un formulario en la sección de 'Contacto' o mediante mis redes sociales">
+    <meta name="description" content="">
     <meta name="languaje" content="es">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- Css -->
+    <!-- Swiper css -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <!-- Styles css -->
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/styleSwiper.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="./src/img/logo.svg" type="image/x-icon">
     <!-- Fonts google -->
@@ -31,7 +31,7 @@
     <title>Contenedor Portafolios</title>
 </head>
 
-<body class="body-index">
+<body>
     <div class="container-fluid">
         <!-- HEADER -->
         <header class="header">
@@ -79,222 +79,107 @@
         </header>
         <!--parting line-->
         <div class="separador"></div>
-        <!-- Content main -->
-        <main class="mainPortfolio">
-            <!-- Portfolio -->
-            <section class="portfolio">
-                <div class="portfolio-contentMain">
-                    <div class="portfolio-containerTitle">
-                        <h1 class="portfolio-title">Bienvenido a nuestra <span class="highlighted">Web</span> de
-                            Portafolios</h1>
+        <!-- MAIN -->
+        <main class="swiper mainPortfolio">
+            <section class="welcomePortfolio">
+                <div class="portfolio-containerTitle">
+                    <h1 class="portfolio-title">Bienvenido a nuestra <span class="highlighted">Web</span> de
+                        Portafolios</h1>
+                </div>
+                <div class="portfolio-description">
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae magni
+                        eveniet quos dolor tempora culpa.</p>
+                </div>
+                <div class="buscador">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    <input type="text" value="" placeholder="Buscar Portafolio">
+                </div>
+            </section>
+            <section class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                    <span>domestic</span>
+                    <div>
+                        <h2>Enjoy the exotic of sunny Hawaii</h2>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            Maui, Hawaii
+                        </p>
                     </div>
-                    <div class="portfolio-description">
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae magni
-                            eveniet quos dolor tempora culpa.</p>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                    <span>subtropical</span>
+                    <div>
+                        <h2>The Island of Eternal Spring</h2>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            Lanzarote, Spanien
+                        </p>
                     </div>
+                </div>
+                <div class="swiper-slide swiper-slide--three">
+                    <span>history</span>
+                    <div>
+                        <h2>Awesome Eiffel Tower</h2>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            Paris, France
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--four">
+                    <span>Mayans</span>
+                    <div>
+                        <h2>One of the safest states in Mexico</h2>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            The Yucatan, Mexico
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--five">
+                    <span>native</span>
+                    <div>
+                        <h2>The most popular yachting destination</h2>
+                        <p>
 
-                    <div class="buscador">
-                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                        <input type="text" value="" placeholder="Buscar Portafolio">
-                    </div>
-                    <div class="portfolio-containerPortfolio">
-                        <div class="container">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-container mySwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="card mb-3">
-                                            <div class="row g-0">
-                                                <div class="col-6">
-                                                    <img src="./src/img/about-me/perfil.jpeg"
-                                                        class="img-fluid rounded-start" alt="...">
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Miqueas Droveta</h5>
-                                                        <p class="card-text" id="card-text">¡Hola! Soy programador, fiel
-                                                            cafetero... Nunca me quedo quieto, y menos cuando hay
-                                                            excelentes oportunidades para aprovecharlas. Actualmente
-                                                            desarrollo backend y bases de datos. Conozco y programo en
-                                                            los lenguajes de programación más conocidos: Java, C#,
-                                                            Python, JavaScript, Delphi y Haskell. Además, uso
-                                                            constantemente en proyectos HTML, CSS, Bootstrap, Angular y
-                                                            .NET. Mis estudios formales me abren grandes puertas, pero
-                                                            también ser autodidacta y la experiencia laboral me llevan a
-                                                            avanzar mucho más rápido. Espero haberles aclarado algunas
-                                                            dudas sobre mí.</p>
-                                                        <div class="moreBtn">
-                                                            <button type="button" class="btn btn-primary"><a
-                                                                    href="src\templates\home.html">Ver
-                                                                    Portafolio</a></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card mb-3">
-                                            <div class="row g-0">
-                                                <div class="col-6">
-                                                    <img src="./src/img/about-me/perfil.jpeg"
-                                                        class="img-fluid rounded-start" alt="...">
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Miqueas Droveta</h5>
-                                                        <p class="card-text" id="card-text">¡Hola! Soy programador, fiel
-                                                            cafetero... Nunca me quedo quieto, y menos cuando hay
-                                                            excelentes oportunidades para aprovecharlas. Actualmente
-                                                            desarrollo backend y bases de datos. Conozco y programo en
-                                                            los lenguajes de programación más conocidos: Java, C#,
-                                                            Python, JavaScript, Delphi y Haskell. Además, uso
-                                                            constantemente en proyectos HTML, CSS, Bootstrap, Angular y
-                                                            .NET. Mis estudios formales me abren grandes puertas, pero
-                                                            también ser autodidacta y la experiencia laboral me llevan a
-                                                            avanzar mucho más rápido. Espero haberles aclarado algunas
-                                                            dudas sobre mí.</p>
-                                                        <div class="moreBtn">
-                                                            <button type="button" class="btn btn-primary"><a
-                                                                    href="src\templates\home.html">Ver
-                                                                    Portafolio</a></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card mb-3">
-                                            <div class="row g-0">
-                                                <div class="col-6">
-                                                    <img src="./src/img/about-me/perfil.jpeg"
-                                                        class="img-fluid rounded-start" alt="...">
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Miqueas Droveta</h5>
-                                                        <p class="card-text" id="card-text">¡Hola! Soy programador, fiel
-                                                            cafetero... Nunca me quedo quieto, y menos cuando hay
-                                                            excelentes oportunidades para aprovecharlas. Actualmente
-                                                            desarrollo backend y bases de datos. Conozco y programo en
-                                                            los lenguajes de programación más conocidos: Java, C#,
-                                                            Python, JavaScript, Delphi y Haskell. Además, uso
-                                                            constantemente en proyectos HTML, CSS, Bootstrap, Angular y
-                                                            .NET. Mis estudios formales me abren grandes puertas, pero
-                                                            también ser autodidacta y la experiencia laboral me llevan a
-                                                            avanzar mucho más rápido. Espero haberles aclarado algunas
-                                                            dudas sobre mí.</p>
-                                                        <div class="moreBtn">
-                                                            <button type="button" class="btn btn-primary"><a
-                                                                    href="src\templates\home.html">Ver
-                                                                    Portafolio</a></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card mb-3">
-                                            <div class="row g-0">
-                                                <div class="col-6">
-                                                    <img src="./src/img/about-me/perfil.jpeg"
-                                                        class="img-fluid rounded-start" alt="...">
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Miqueas Droveta</h5>
-                                                        <p class="card-text" id="card-text">¡Hola! Soy programador, fiel
-                                                            cafetero... Nunca me quedo quieto, y menos cuando hay
-                                                            excelentes oportunidades para aprovecharlas. Actualmente
-                                                            desarrollo backend y bases de datos. Conozco y programo en
-                                                            los lenguajes de programación más conocidos: Java, C#,
-                                                            Python, JavaScript, Delphi y Haskell. Además, uso
-                                                            constantemente en proyectos HTML, CSS, Bootstrap, Angular y
-                                                            .NET. Mis estudios formales me abren grandes puertas, pero
-                                                            también ser autodidacta y la experiencia laboral me llevan a
-                                                            avanzar mucho más rápido. Espero haberles aclarado algunas
-                                                            dudas sobre mí.</p>
-                                                        <div class="moreBtn">
-                                                            <button type="button" class="btn btn-primary"><a
-                                                                    href="src\templates\home.html">Ver
-                                                                    Portafolio</a></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card mb-3">
-                                            <div class="row g-0">
-                                                <div class="col-6">
-                                                    <img src="./src/img/about-me/perfil.jpeg"
-                                                        class="img-fluid rounded-start" alt="...">
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Miqueas Droveta</h5>
-                                                        <p class="card-text" id="card-text">¡Hola! Soy programador, fiel
-                                                            cafetero... Nunca me quedo quieto, y menos cuando hay
-                                                            excelentes oportunidades para aprovecharlas. Actualmente
-                                                            desarrollo backend y bases de datos. Conozco y programo en
-                                                            los lenguajes de programación más conocidos: Java, C#,
-                                                            Python, JavaScript, Delphi y Haskell. Además, uso
-                                                            constantemente en proyectos HTML, CSS, Bootstrap, Angular y
-                                                            .NET. Mis estudios formales me abren grandes puertas, pero
-                                                            también ser autodidacta y la experiencia laboral me llevan a
-                                                            avanzar mucho más rápido. Espero haberles aclarado algunas
-                                                            dudas sobre mí.</p>
-                                                        <div class="moreBtn">
-                                                            <button type="button" class="btn btn-primary"><a
-                                                                    href="src\templates\home.html">Ver
-                                                                    Portafolio</a></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card mb-3">
-                                            <div class="row g-0">
-                                                <div class="col-6">
-                                                    <img src="./src/img/about-me/perfil.jpeg"
-                                                        class="img-fluid rounded-start" alt="...">
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Miqueas Droveta</h5>
-                                                        <p class="card-text" id="card-text">¡Hola! Soy programador, fiel
-                                                            cafetero... Nunca me quedo quieto, y menos cuando hay
-                                                            excelentes oportunidades para aprovecharlas. Actualmente
-                                                            desarrollo backend y bases de datos. Conozco y programo en
-                                                            los lenguajes de programación más conocidos: Java, C#,
-                                                            Python, JavaScript, Delphi y Haskell. Además, uso
-                                                            constantemente en proyectos HTML, CSS, Bootstrap, Angular y
-                                                            .NET. Mis estudios formales me abren grandes puertas, pero
-                                                            también ser autodidacta y la experiencia laboral me llevan a
-                                                            avanzar mucho más rápido. Espero haberles aclarado algunas
-                                                            dudas sobre mí.</p>
-                                                        <div class="moreBtn">
-                                                            <button type="button" class="btn btn-primary"><a
-                                                                    href="src\templates\home.html">Ver
-                                                                    Portafolio</a></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            Whitsunday Islands, Australia
+                        </p>
                     </div>
                 </div>
             </section>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </main>
         <!--parting line-->
         <div class="separador"></div>
@@ -309,9 +194,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="src/js/index/index.js"></script>
-    <script src="src/js/index/carrusel.js"></script>
+    <!-- scripts -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    <script src="./src/js/index/script.js"></script>
 </body>
 
 </html>
