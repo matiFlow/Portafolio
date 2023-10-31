@@ -178,6 +178,12 @@ the logo disappears in cell size
     margin: 5px 0px 0px 0px;
 }
 
+.container-fluid .container-user-mobile .text-login{
+    margin: 0;
+    color: #617b9d;
+    font-size: 10px
+}
+
 .container-fluid .navbar-collapse .container-user-desktop{
     display: none;
 }
@@ -276,26 +282,32 @@ the logo disappears in cell size
     padding: 15px;   
 }
 
+.navbar .navbar-collapse .buscador-nav{
+    display: none;
+    visibility: hidden;
+}
+
 .mainPortfolio .welcomePortfolio .buscador{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 @media screen and (min-width:768px) {
     .mainPortfolio .welcomePortfolio .buscador{
         display: none;
+        visibility: hidden;
     }
 
-    .navbar .container-fluid .collapse .buscador-nav{
+    .navbar .navbar-collapse .buscador-nav{
+        visibility: visible;
         width: 50%;
-        height: 35px;
-        margin-bottom: 20px;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px;
+        
     }
 }
 
@@ -318,7 +330,7 @@ the logo disappears in cell size
     }
 }
 
-.mainPortfolio .portfolio .portfolio-contentMain .buscador input{
+.mainPortfolio .welcomePortfolio .buscador input{
     width: 80%;
     border: solid 2px;
     border-radius: 10px;
