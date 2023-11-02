@@ -1,8 +1,11 @@
-const names = getNames();
-showName(names);
+//const names = getNames();
+//showName(names);
+
+getNames(showName)
 
 function showName(names) {
     const homeContentTitle = document.getElementById('home-contentTitle'); 
+    // console.log(names)
     console.log(homeContentTitle)
     for (const name of names) {
         // console.log(card)
