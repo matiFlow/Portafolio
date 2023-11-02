@@ -1378,3 +1378,77 @@ the logo disappears in cell size
 .footer p {
     margin: 0;
 }
+
+/*SECCION FORM-LOGIN*/
+.containerForm-Title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mainForm {
+    margin-top: 20px;
+}
+
+.mainForm .form-porfolio{
+    width: 100%;
+}
+
+.mainForm .form-porfolio .labels .text-label-name{
+    position: relative;
+    overflow: hidden;
+}
+
+.mainForm .form-porfolio .labels .text-label-name .label-name{
+    position: absolute;
+    border-bottom: 1px solid #c7c7c7;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.mainForm .form-porfolio .labels .text-label-name .label-name::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #69bca6;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.mainForm .form-porfolio .labels .text-label-name .label-name .text-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #C1CDEE;
+}
+
+
+.mainForm .form-porfolio .labels .text-label-name input{
+    border: none;
+    background: transparent;
+    color: #C1CDEE;
+    padding: 20px 0 0 0;
+    margin: 0;
+    transition: all 0.3s ease;
+    outline: 0px;
+}
+
+.mainForm .form-porfolio .labels .text-label-name .label-name:focus{
+    transform: translateY(-10%);
+}
+
+.mainForm .form-porfolio .labels .text-label-name .text-name:focus{
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #69bca6;
+}
+
+.mainForm .form-porfolio .labels .text-label-name input:focus{
+    transform: translateY(-10%);
+}

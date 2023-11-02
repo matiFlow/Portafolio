@@ -19,7 +19,7 @@ function getTemplate(name) {
     h1.className = 'home-title';
     
     h1.innerHTML = `   
-                        Hola, soy <span class="title-name">${name.name}</span>.
+                        Hola, soy <span class="title-name">${name.name} ${name.surname}</span>.
                         Te doy la bienvenida a mi <span class="highlighted">Portfolio Web</span>. 
                    `;
     return h1;
