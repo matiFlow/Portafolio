@@ -1,7 +1,6 @@
-const blogs = getBlog();
-showBlog(blogs);
+getBlogs(showBlogs);
 
-function showBlog(blogs) {
+function showBlogs(blogs) {
     const cards_blog = document.getElementById('card-blog');
     for (const blog of blogs) {
         const newBlog = new Blog(blog);

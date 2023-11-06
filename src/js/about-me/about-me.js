@@ -34,81 +34,46 @@ function getTemplate(aboutMe) {
 // const skills = getSkills();
 // showSkills(skills);
 
-getSkills(showSkills);
+getTechnicalSkills(showTechnicalSkills);
 
-function showSkills(skills) {
-    const skillsContentMain = document.getElementById('skills-contentMain');
-    for (const skill of skills) {
-        const newSkill = new Skills(skill);
-        const template = getTemplateSkills(newSkill);
-        skillsContentMain.append(template);
+function showTechnicalSkills(technicalSkills) {
+    const technicalskillsContentMain = document.getElementById('technical-icons');
+    for (const technicalSkill of technicalSkills) {
+        const newTechnicalSkill = new TechnicalSkills(technicalSkill);
+        const template = getTemplateTechnicalSkills(newTechnicalSkill);
+        technicalskillsContentMain.append(template);
     }
 }
 
-function getTemplateSkills(skill) {
-    const divSkillsContainer = document.createElement('div');
-    divSkillsContainer.className = 'skills-container';
-    divSkillsContainer.innerHTML = `
-                                    <div class="skills-technical visible" id="skills-technical">
-                                        <h3>Tecnicas</h3>
-                                        <!--button-->
-                                        <div id="technical-button">
-                                            <button class="btn btn-primary button_next" id="next">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z"/></svg>
-                                            </button>
-                                        </div>
-                                        <div class="technical-icons">
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.technicalSkill_1}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.technicalSkill_2}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.technicalSkill_3}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.technicalSkill_4}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.technicalSkill_5}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.technicalSkill_6}
-                                            </p>                                           
-                                        </div>
-                                    </div>
-                                    <div class="skills-soft oculto" id="skills-soft">
-                                        <h3>Blandas</h3>
-                                        <!--button-->
-                                        <div id="soft-button">
-                                            <button class="btn btn-primary button_previous" id="previous">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z"/></svg>
-                                            </button>
-                                        </div>
-                                        <div class="soft-icons">
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.softSkill_1}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.softSkill_2}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.softSkill_3}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.softSkill_4}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.softSkill_5}
-                                            </p>
-                                            <p style=" color: white; text-align: center;">
-                                                ${skill.softSkill_6}
-                                            </p>
-                                        </div>
-                                    </div>
+function getTemplateTechnicalSkills(technicalSkill) {
+    const divTechnicalSkillsContainer = document.createElement('p');
+    divTechnicalSkillsContainer.className = 'technical_skills';
+    divTechnicalSkillsContainer.innerHTML = `
+                                    ${technicalSkill.description}
                                 `;
-    return divSkillsContainer;
+    return divTechnicalSkillsContainer;
+};
+
+/* soft-skills */
+
+getSoftSkills(showSoftSkills);
+
+function showSoftSkills(softSkills) {
+    const softskillsContentMain = document.getElementById('soft-icons');
+    for (const softSkill of softSkills) {
+        const newSoftSkill = new SoftSkills(softSkill);
+        const template = getTemplateSoftSkills(newSoftSkill);
+        softskillsContentMain.append(template);
+    }
+}
+
+function getTemplateSoftSkills(softSkill) {
+    const divSoftSkillsContainer = document.createElement('p');
+    divSoftSkillsContainer.className = 'soft_skills';
+    divSoftSkillsContainer.innerHTML = `
+                                    ${softSkill.description}
+                                `;
+    return divSoftSkillsContainer;
 };
 
 

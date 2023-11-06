@@ -670,6 +670,7 @@ the logo disappears in cell size
 .oculto {
     visibility: hidden;
     opacity: 0;
+    display: none;
 }
 
 @media screen and (min-width:768px) {
@@ -1420,6 +1421,8 @@ the logo disappears in cell size
     transition: all 0.3s ease;
 }
 
+.mainForm .form-porfolio .labels .text-label-name .label-name
+
 .mainForm .form-porfolio .labels .text-label-name .label-name .text-name{
     position: absolute;
     bottom: 5px;
@@ -1427,7 +1430,6 @@ the logo disappears in cell size
     transition: all 0.3s ease;
     color: #C1CDEE;
 }
-
 
 .mainForm .form-porfolio .labels .text-label-name input{
     border: none;
@@ -1437,18 +1439,4 @@ the logo disappears in cell size
     margin: 0;
     transition: all 0.3s ease;
     outline: 0px;
-}
-
-.mainForm .form-porfolio .labels .text-label-name .label-name:focus{
-    transform: translateY(-10%);
-}
-
-.mainForm .form-porfolio .labels .text-label-name .text-name:focus{
-    transform: translateY(-50%);
-    font-size: 14px;
-    color: #69bca6;
-}
-
-.mainForm .form-porfolio .labels .text-label-name input:focus{
-    transform: translateY(-10%);
 }
