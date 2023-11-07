@@ -20,6 +20,8 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Css -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Swiper css -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
     <!-- Fonts google -->
@@ -69,10 +71,10 @@
                 <span class="highlighted">Web</span>
             </h1>
             <br>
-            <h6>
+            <h5>
                 Tomaremos algunos datos básicos para poder crear tu Portafolio Web, luego podrás
                 modificarlos y agregar contenido en las demás secciones
-            </h6>
+            </h5>
         </div>
 
         <main class="mainForm">
@@ -81,10 +83,11 @@
                 <form class="form-porfolio" id="form-porfolio">
                     <div class="labels">
                         <div class="text-label-name">
-                            <label for="name" class="label-name" id="label-name"><span class="text-name">Nombre completo</span></label>
+                            <label for="name" class="label-name" id="label-name"><span class="text-name">Nombre
+                                    completo</span></label>
                             <input type="text" class="form-control" id="name" value="" required>
                         </div>
-                        <div class="textarea-label-name">
+                        <div class="textarea-label">
                             <i class="fa-solid fa-circle-info"></i>
                             <label for="text" class="label-description">Description</label>
                             <textarea class="form-control" id="text" rows="3" value="" required></textarea>
@@ -96,36 +99,34 @@
                             <br>
                             Seleccione las que quiera
                         </h5>
-                        <p>Puede que no aparezcan algunas tecnologías, no te preocupes, estamos trabajando en ello.</p>
+                        <p>Puede que no aparezcan algunas tecnologías, no te preocupes, estamos trabajando en ello
+                            &#128512</p>
                         <div class="carrusel" id="carrusel">
-                            <div class="container">
-                                <div class="tecnologies">
-                                    <div class="card-tecnologies">
-                                        <img src="../img/form-img/c_icon_132529.ico" alt="">
-                                        <p>Python</p>
-                                    </div>
-                                    <div class="card-tecnologies">
-                                        <img src="../img/form-img/c_icon_132529.ico" alt="">
-                                        <p>c++</p>
-                                    </div>
-                                    <div class="card-tecnologies">
-                                        <img src="../img/form-img/c_icon_132529.ico" alt="">
-                                        <p>c++</p>
-                                    </div>
-                                    <div class="card-tecnologies">
-                                        <img src="../img/form-img/c_icon_132529.ico" alt="">
-                                        <p>c++</p>
-                                    </div>
-                                    <div class="card-tecnologies">
-                                        <img src="../img/form-img/c_icon_132529.ico" alt="">
-                                        <p>c++</p>
-                                    </div>
-                                    <div class="card-tecnologies">
-                                        <img src="../img/form-img/c_icon_132529.ico" alt="">
-                                        <p>c++</p>
-                                    </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <section class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide--one">
+                                    <img src="../img/form-img/c_icon_132529.ico" alt="">
+                                    <p>Python</p>
                                 </div>
-                            </div>
+                                <div class="swiper-slide swiper-slide--one">
+                                    <img src="../img/form-img/c_icon_132529.ico" alt="">
+                                    <p>Python</p>
+                                </div>
+                                <div class="swiper-slide swiper-slide--one">
+                                    <img src="../img/form-img/c_icon_132529.ico" alt="">
+                                    <p>Python</p>
+                                </div>
+                                <div class="swiper-slide swiper-slide--one">
+                                    <img src="../img/form-img/c_icon_132529.ico" alt="">
+                                    <p>Python</p>
+                                </div>
+                                <div class="swiper-slide swiper-slide--one">
+                                    <img src="../img/form-img/c_icon_132529.ico" alt="">
+                                    <p>Python</p>
+                                </div>
+                            </section>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
 
@@ -174,7 +175,6 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script src="../js/form-login/animation.js"></script>
-
 </body>
 
 </html>
