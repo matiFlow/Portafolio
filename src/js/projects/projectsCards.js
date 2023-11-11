@@ -10,3 +10,12 @@ class Projects {
         this.link = project.link;
     }
 }
+
+class Projects2 {
+    constructor(project) {
+        this.img = project.img;
+        this.title = project.title;
+        this.description = project.description;
+        this.tecnology = project.technologiesByProject.tecnology.description
+    }
+}

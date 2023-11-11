@@ -7,12 +7,12 @@ class AboutUs {
 
 class TechnicalSkills {
     constructor(technicalSkill) {
-        this.technicalSkill = technicalSkill.description;
+        this.description = technicalSkill.description;
     }
 }
 
 class SoftSkills {
     constructor(softSkill) {
-        this.softSkill = softSkill.description;
+        this.description = softSkill.description;
     }
 }

@@ -1381,6 +1381,10 @@ the logo disappears in cell size
 }
 
 /*SECCION FORM-LOGIN*/
+#form-login{
+    height: 100%;
+}
+
 .containerForm-Title{
     text-align: center;
     margin-top: 20px;
@@ -1388,6 +1392,7 @@ the logo disappears in cell size
 
 .mainForm {
     margin-top: 20px;
+    width: 100%;
 }
 
 .mainForm .form-porfolio{
@@ -1432,9 +1437,10 @@ the logo disappears in cell size
     color: #C1CDEE;
 }
 
-.mainForm .form-porfolio .form-tecnologies h5, p{
+.mainForm .form-porfolio .form-tecnologies .What_technology, .comment{
     text-align: center;
     color: #C1CDEE;
+    margin-top: 25px;
 }
 
 .mainForm .form-porfolio .form-tecnologies .carrusel{
@@ -1455,10 +1461,12 @@ the logo disappears in cell size
 }
 
 .mainForm .form-porfolio .form-tecnologies .carrusel .swiper-wrapper .swiper-slide img{
-   width: 35px;
-   height: 35px;
+   width: 45px;
+   height: 45px;
 }
 
 .mainForm .form-porfolio .form-tecnologies .carrusel .swiper-wrapper .swiper-slide p{
-    font-size: 10px;
+    font-size: 15px;
+    color: #C1CDEE;
+    font-weight: 500;
 }

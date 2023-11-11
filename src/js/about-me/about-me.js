@@ -68,7 +68,7 @@ function showSoftSkills(softSkills) {
 }
 
 function getTemplateSoftSkills(softSkill) {
-    const divSoftSkillsContainer = document.createElement('p');
+    const divSoftSkillsContainer = document.createElement('i');
     divSoftSkillsContainer.className = 'soft_skills';
     divSoftSkillsContainer.innerHTML = `
                                     ${softSkill.description}
