@@ -1,9 +1,14 @@
+/*
 const projects = getProjects();
 showProject(projects);
+*/
+
+getProjects(showProject);
 
 function showProject(projects) {
     const projects_containerProyect = document.getElementById('projects-containerProyect'); 
     for (const project of projects) {
+        console.log(projects)
         // console.log(card)
         const newProject = new Projects(project);
         // console.log(newProject)
@@ -18,7 +23,7 @@ function getTemplate(project) {
     div.className = 'card';
     
     div.innerHTML = `   <!--card image-->
-                        <img src="${project.img}" class="card-img-top" alt="blog">
+                        <img src="${project.imagen}" class="card-img-top" alt="blog">
                         <div class="card-body">
                             <!--card title-->
                             <h5 class="card-title">${project.title}</h5>

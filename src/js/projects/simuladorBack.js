@@ -1,3 +1,12 @@
+function getProjects(show) {
+    fetch("https://localhost:7043/Project/user/1")
+        .then((response) => response.json() )
+        .then((json) => showProject(json) )
+        .catch((error) => console.log(JSON.stringify(error)));
+};
+
+
+/*
 function getProjects() {
     return [{
             img: '../img/project-img/img-test-project-2.webp', 
@@ -31,3 +40,4 @@ function getProjects() {
             link: '#'
         }]
 };
+*/
