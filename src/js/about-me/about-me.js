@@ -6,11 +6,9 @@ getAboutUs(showAboutUs);
 
 function showAboutUs(aboutUs) {
     const aboutMeContentMain= document.getElementById('aboutMe-contentMain');
-    for (const aboutMe of aboutUs) {
-        const newAboutMe = new AboutUs(aboutMe);
-        const template = getTemplate(newAboutMe);
-        aboutMeContentMain.append(template);
-    }
+    const newAboutMe = new AboutUs(aboutUs);
+    const template = getTemplate(newAboutMe);
+    aboutMeContentMain.append(template);
 }
 
 function getTemplate(aboutMe) {
@@ -30,14 +28,12 @@ function getTemplate(aboutMe) {
     
 };
 
-//Get object literal "skills"
-// const skills = getSkills();
-// showSkills(skills);
 
 getTechnicalSkills(showTechnicalSkills);
 
 function showTechnicalSkills(technicalSkills) {
     const technicalskillsContentMain = document.getElementById('technical-icons');
+    console.log(technicalSkills)
     for (const technicalSkill of technicalSkills) {
         const newTechnicalSkill = new TechnicalSkills(technicalSkill);
         const template = getTemplateTechnicalSkills(newTechnicalSkill);
@@ -60,6 +56,7 @@ getSoftSkills(showSoftSkills);
 
 function showSoftSkills(softSkills) {
     const softskillsContentMain = document.getElementById('soft-icons');
+    console.log(softSkills)
     for (const softSkill of softSkills) {
         const newSoftSkill = new SoftSkills(softSkill);
         const template = getTemplateSoftSkills(newSoftSkill);
@@ -71,7 +68,8 @@ function getTemplateSoftSkills(softSkill) {
     const divSoftSkillsContainer = document.createElement('i');
     divSoftSkillsContainer.className = 'soft_skills';
     divSoftSkillsContainer.innerHTML = `
-                                    ${softSkill.description}
+                                    <img src="${softSkill.skillPhoto}" alt="Logo">
+                                    
                                 `;
     return divSoftSkillsContainer;
 };

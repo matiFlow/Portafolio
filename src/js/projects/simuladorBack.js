@@ -1,5 +1,5 @@
 function getProjects(show) {
-    fetch("https://localhost:7043/Project/user/1")
+    fetch("https://localhost:7043/Project/User/4")
         .then((response) => response.json() )
         .then((json) => showProject(json) )
         .catch((error) => console.log(JSON.stringify(error)));

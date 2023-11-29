@@ -6,7 +6,8 @@ showProject(projects);
 getProjects(showProject);
 
 function showProject(projects) {
-    const projects_containerProyect = document.getElementById('projects-containerProyect'); 
+    const projects_containerProyect = document.getElementById('projects-containerProyect');
+    console.log(projects) 
     for (const project of projects) {
         console.log(projects)
         // console.log(card)

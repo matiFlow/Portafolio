@@ -3,6 +3,7 @@ class Projects {
         this.imagen = "https://localhost:7043" + project.urlImage;
         this.description = project.description;
         this.title = project.title;
+
         /* 
         this.logoHtml = project.logoHtml;
         this.logoCss = project.logoCss;
@@ -18,6 +19,6 @@ class Projects2 {
         this.img = project.img;
         this.title = project.title;
         this.description = project.description;
-        this.tecnology = project.technologiesByProject.tecnology.description
+        this.tecnology = project.technologiesByProject
     }
 }

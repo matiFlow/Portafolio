@@ -1,7 +1,7 @@
 class AboutUs {
     constructor(aboutMe){
-        this.aboutMe = aboutMe.aboutMe;
-        this.profilePhoto = aboutMe.profile_photo;
+        this.aboutMe = aboutMe.description;
+        this.profilePhoto = "https://localhost:7043" + aboutMe.urlImage;;
     }
 };
 
@@ -14,5 +14,6 @@ class TechnicalSkills {
 class SoftSkills {
     constructor(softSkill) {
         this.description = softSkill.description;
+        this.skillPhoto = softSkill.urlImage
     }
 }

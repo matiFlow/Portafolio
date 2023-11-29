@@ -1,20 +1,14 @@
-//const names = getNames();
-//showName(names);
-
 getNames(showName)
 
 function showName(names) {
     const homeContentTitle = document.getElementById('home-contentTitle'); 
-    // console.log(names)
     console.log(homeContentTitle)
-    for (const name of names) {
-        // console.log(card)
-        const newName = new Name(name);
-        // console.log(newProject)
-        const template = getTemplate(newName);
-        console.log(template)
-        homeContentTitle.append(template);
-    }
+    console.log('Mostrando nombres:', names);
+    const newName = new Name(names);
+    const template = getTemplate(newName);
+    homeContentTitle.append(template);
+    
+    
 }
 
 function getTemplate(name) {
