@@ -2,6 +2,7 @@ getBlogs(showBlogs);
 
 function showBlogs(blogs) {
     const cards_blog = document.getElementById('card-blog');
+    console.log(blogs)
     for (const blog of blogs) {
         const newBlog = new Blog(blog);
         const template = getTemplate(newBlog);
@@ -17,7 +18,10 @@ function getTemplate(blog) {
                         <div class="card-body">
                             <h5 class="card-title">${blog.title}</h5>
                             <p class="card-text">${blog.description}</p>
-                            <a href="${blog.enlace}" class="card-link">Enlace</a>
+                            <button type="button" class="btn btn-primary">
+                                <a href="${blog.enlace}" class="card-link">Enlace</a>
+                            </button>
+                            
                         </div>
                     </div>`;
     agregar_imagen_carrusel(blog.img)
@@ -28,7 +32,7 @@ function getTemplate(blog) {
 function agregar_imagen_carrusel(blog_img){
     const carousel_inner = document.getElementById('carousel-inner');
     const carrusel = document.createElement('div')
-    carrusel.className = 'carousel-item active';
+    carrusel.className = 'carousel-item';
 
     carrusel.innerHTML = `<img src="${blog_img}" class="d-block" alt="Imagen del blog">`;
     carousel_inner.append(carrusel)

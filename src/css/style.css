@@ -1310,6 +1310,10 @@ the logo disappears in cell size
     text-align: center;
 }
 
+.main .blog .blog-container button a{
+    color:#C1CDEE;
+}
+
 .main .blogLinks {
     min-height: auto;
 }
@@ -1350,6 +1354,7 @@ the logo disappears in cell size
         margin-left: 10px;
     }
 }
+
 
 .main .blogLinks .blogButton {
     display: flex;

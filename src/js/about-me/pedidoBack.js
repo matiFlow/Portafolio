@@ -13,7 +13,7 @@ function getTechnicalSkills(show) {
 };
 
 function getSoftSkills(show) {
-    fetch("https://localhost:7043/SoftSkill/User/4")
+    fetch("https://localhost:7043/SoftSkill/user/4")
         .then((response) => response.json() )
         .then((json) => showSoftSkills(json) )
         .catch((error) => console.log(JSON.stringify(error)));
